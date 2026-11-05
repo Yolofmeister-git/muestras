@@ -5,29 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Tarjeta para mesa · Orula Taste of África</title>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<style>:root{--bg:#120d0a;--surface:#1d1611;--ink:#f6ead7;--muted:#bfae95;--line:rgba(246,234,215,.14);--hd:#1d1611;--hdink:#f6ead7;--hdmuted:#bfae95;--acc:#f2a516;--accink:#120d0a;--acc2:#d9481f;--disp:"Unbounded","Arial Black",sans-serif;--body:"DM Sans",system-ui,sans-serif;--dispw:900;--disptt:uppercase;--displs:-.02em;--dispvar:normal;--subc:#f2a516}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
 *{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#120d0a;--char:#1d1611;--cream:#f6ead7;--sand:#e9d6b6;--saffron:#f2a516;--palm:#d9481f;--leaf:#2f7a4c;--disp:"Unbounded","Arial Black",sans-serif;
+--kente:repeating-linear-gradient(90deg,var(--saffron) 0 34px,var(--ink) 34px 40px,var(--palm) 40px 62px,var(--ink) 62px 68px,var(--leaf) 68px 96px,var(--ink) 96px 102px,var(--saffron) 102px 110px,var(--ink) 110px 116px)}
 @page{size:100mm 150mm;margin:0}
-body{font-family:var(--body);background:#d9d4cc;min-height:100vh;display:grid;place-items:center;padding:20px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.card{width:100mm;height:150mm;background:var(--hd);color:var(--hdink);display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:12mm 10mm 9mm;position:relative;overflow:hidden;box-shadow:0 20px 60px -20px rgba(0,0,0,.5)}
-.card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4mm;background:linear-gradient(90deg,var(--acc) 0 60%,var(--acc2) 60% 100%)}
-h1{font-family:var(--disp);font-weight:var(--dispw);text-transform:var(--disptt);letter-spacing:var(--displs);font-variation-settings:var(--dispvar);font-size:13mm;line-height:.95}
-.sub{font-family:var(--disp);font-weight:var(--dispw);font-variation-settings:var(--dispvar);text-transform:var(--disptt);font-size:5.5mm;color:var(--subc);margin-top:1.5mm}
-.qr{background:#fff;padding:4mm;border-radius:4mm;width:62mm}
-.qr svg{display:block;width:100%;height:auto}
-.cta{font-size:5mm;font-weight:700;line-height:1.2}
-.cta span{display:block;font-size:3.6mm;font-weight:500;color:var(--hdmuted);margin-top:1.5mm}
-.hint{position:fixed;top:12px;left:0;right:0;text-align:center;font:600 13px system-ui,sans-serif;color:#3a352e}
-@media print{body{background:none;padding:0;display:block}.card{box-shadow:none}.hint{display:none}}
+body{font-family:"DM Sans",system-ui,sans-serif;background:#2a211b;min-height:100vh;display:grid;place-items:center;padding:56px 16px 24px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hint{position:fixed;top:0;left:0;right:0;height:38px;display:flex;align-items:center;justify-content:center;background:var(--saffron);color:var(--ink);font-size:12px;font-weight:700;letter-spacing:.04em}
+.card{position:relative;width:100mm;height:150mm;max-width:100%;background:radial-gradient(120% 70% at 80% 20%,#3a1d10 0%,var(--ink) 62%);color:var(--cream);overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.k{width:100%;height:5mm;background:var(--kente);background-size:116px 100%;flex:none}
+.in{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:7mm 9mm 6mm;width:100%}
+.brand{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.03em;color:var(--saffron);font-size:6mm;line-height:1}
+h1{font-family:var(--disp);font-weight:900;text-transform:uppercase;letter-spacing:-.04em;line-height:.84;font-size:13mm;margin-top:2mm}
+h1 em{font-style:normal;color:var(--palm)}
+.arch{position:relative;width:60mm;padding:9mm 6mm 6mm;background:var(--cream);border-radius:999px 999px 4mm 4mm}
+.arch svg.segno{display:block;width:100%;height:auto}
+.ring{position:absolute;inset:-3mm -3mm 2mm;border:.5mm solid rgba(242,165,22,.6);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+.sun{position:absolute;right:-7mm;top:-7mm;width:17mm;height:17mm}
+.cta{font-family:var(--disp);font-weight:700;font-size:4.6mm;line-height:1.15;letter-spacing:-.01em}
+.cta span{display:block;font-family:"DM Sans",sans-serif;font-weight:500;font-size:3.4mm;color:var(--sand);margin-top:1.5mm;letter-spacing:0}
+@media print{body{background:none;padding:0;display:block}.hint{display:none}.card{box-shadow:none}}
 </style>
 </head>
 <body>
-<p class="hint">Propuesta de tarjeta para mesa · 10 × 15 cm</p>
+<p class="hint">Propuesta de tarjeta para mesa · 10 × 15 cm · aún no es oficial</p>
 <div class="card">
-<div><h1>Orula</h1><p class="sub">Taste of África</p></div>
-<div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" class="segno"><path class="qrline" stroke="#111" d="M0 0.5h7m2 0h3m1 0h2m1 0h5m2 0h1m2 0h7m-33 1h1m5 0h1m4 0h5m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h4m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h1m3 0h2m1 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m5 0h4m2 0h3m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h2m1 0h1m2 0h2m4 0h4m-24 1h1m1 0h5m2 0h2m2 0h3m1 0h1m4 0h3m1 0h5m-30 1h2m1 0h1m2 0h2m2 0h1m4 0h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h2m1 0h1m-33 1h2m1 0h5m2 0h3m2 0h1m12 0h1m1 0h2m-29 1h1m4 0h4m2 0h3m2 0h1m1 0h1m1 0h1m1 0h2m1 0h4m-32 1h1m1 0h1m1 0h1m1 0h2m1 0h3m3 0h1m1 0h2m3 0h4m2 0h2m2 0h1m-28 1h1m3 0h1m1 0h16m2 0h1m1 0h2m-29 1h1m1 0h2m1 0h1m3 0h2m3 0h1m1 0h3m2 0h2m2 0h1m1 0h1m-32 1h1m1 0h1m1 0h2m1 0h5m4 0h1m3 0h7m3 0h1m-30 1h2m3 0h1m1 0h3m1 0h2m2 0h2m1 0h2m1 0h1m1 0h2m1 0h2m3 0h1m-33 1h2m1 0h3m2 0h1m3 0h3m1 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h1m-33 1h3m1 0h1m1 0h2m1 0h3m1 0h5m2 0h3m1 0h2m1 0h2m1 0h2m-32 1h2m1 0h3m5 0h1m2 0h2m4 0h3m4 0h4m1 0h1m-32 1h1m1 0h1m2 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h3m1 0h2m-33 1h1m2 0h3m4 0h1m4 0h1m2 0h3m2 0h1m1 0h2m2 0h1m2 0h1m-33 1h1m1 0h1m3 0h1m3 0h1m1 0h2m1 0h2m3 0h2m4 0h1m2 0h1m1 0h1m-32 1h1m1 0h1m1 0h1m3 0h4m3 0h1m2 0h5m1 0h2m3 0h4m-33 1h1m3 0h3m1 0h3m1 0h4m1 0h3m2 0h1m1 0h5m2 0h1m-24 1h1m4 0h2m1 0h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m-33 1h7m3 0h2m1 0h1m1 0h2m1 0h1m2 0h4m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h2m1 0h2m3 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m3 0h1m1 0h6m-30 1h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h5m1 0h1m1 0h1m1 0h1m2 0h2m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m2 0h2m1 0h2m-31 1h1m5 0h1m2 0h6m1 0h1m1 0h1m2 0h2m5 0h3m-31 1h7m1 0h2m2 0h1m4 0h1m2 0h1m1 0h3m1 0h2m1 0h1m1 0h1"/></svg></div>
-<p class="cta">Escanea y ve el menú<span>Arma tu pedido y mándalo por WhatsApp</span></p>
+  <div class="k" aria-hidden="true"></div>
+  <div class="in">
+    <div><p class="brand">Orula</p><h1>La <em>carta</em></h1></div>
+    <div class="arch">
+      <span class="ring" aria-hidden="true"></span>
+      <svg class="sun" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="18" fill="#d9481f"/><g stroke="#f2a516" stroke-width="5" stroke-linecap="round"><path d="M50 6v14M50 80v14M6 50h14M80 50h14M19 19l10 10M71 71l10 10M81 19 71 29M29 71 19 81"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" class="segno"><path class="qrline" stroke="#111" d="M0 0.5h7m2 0h3m1 0h2m1 0h5m2 0h1m2 0h7m-33 1h1m5 0h1m4 0h5m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h4m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h1m3 0h2m1 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m5 0h4m2 0h3m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h2m1 0h1m2 0h2m4 0h4m-24 1h1m1 0h5m2 0h2m2 0h3m1 0h1m4 0h3m1 0h5m-30 1h2m1 0h1m2 0h2m2 0h1m4 0h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h2m1 0h1m-33 1h2m1 0h5m2 0h3m2 0h1m12 0h1m1 0h2m-29 1h1m4 0h4m2 0h3m2 0h1m1 0h1m1 0h1m1 0h2m1 0h4m-32 1h1m1 0h1m1 0h1m1 0h2m1 0h3m3 0h1m1 0h2m3 0h4m2 0h2m2 0h1m-28 1h1m3 0h1m1 0h16m2 0h1m1 0h2m-29 1h1m1 0h2m1 0h1m3 0h2m3 0h1m1 0h3m2 0h2m2 0h1m1 0h1m-32 1h1m1 0h1m1 0h2m1 0h5m4 0h1m3 0h7m3 0h1m-30 1h2m3 0h1m1 0h3m1 0h2m2 0h2m1 0h2m1 0h1m1 0h2m1 0h2m3 0h1m-33 1h2m1 0h3m2 0h1m3 0h3m1 0h2m1 0h3m1 0h1m1 0h3m1 0h2m1 0h1m-33 1h3m1 0h1m1 0h2m1 0h3m1 0h5m2 0h3m1 0h2m1 0h2m1 0h2m-32 1h2m1 0h3m5 0h1m2 0h2m4 0h3m4 0h4m1 0h1m-32 1h1m1 0h1m2 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h3m1 0h2m-33 1h1m2 0h3m4 0h1m4 0h1m2 0h3m2 0h1m1 0h2m2 0h1m2 0h1m-33 1h1m1 0h1m3 0h1m3 0h1m1 0h2m1 0h2m3 0h2m4 0h1m2 0h1m1 0h1m-32 1h1m1 0h1m1 0h1m3 0h4m3 0h1m2 0h5m1 0h2m3 0h4m-33 1h1m3 0h3m1 0h3m1 0h4m1 0h3m2 0h1m1 0h5m2 0h1m-24 1h1m4 0h2m1 0h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m-33 1h7m3 0h2m1 0h1m1 0h2m1 0h1m2 0h4m1 0h1m1 0h1m1 0h1m-31 1h1m5 0h1m1 0h1m3 0h3m1 0h1m1 0h1m1 0h2m1 0h2m3 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m3 0h1m1 0h6m-30 1h1m1 0h3m1 0h1m1 0h3m2 0h1m1 0h5m1 0h1m1 0h1m1 0h1m2 0h2m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m2 0h2m1 0h2m-31 1h1m5 0h1m2 0h6m1 0h1m1 0h1m2 0h2m5 0h3m-31 1h7m1 0h2m2 0h1m4 0h1m2 0h1m1 0h3m1 0h2m1 0h1m1 0h1"/></svg>
+    </div>
+    <p class="cta">Escanea, elige y pide<span>Ve la carta y manda tu pedido por WhatsApp</span></p>
+  </div>
+  <div class="k" aria-hidden="true"></div>
 </div>
 </body>
 </html>
