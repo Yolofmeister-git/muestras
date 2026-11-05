@@ -5,29 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Tarjeta para mesa · La Consentida</title>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>:root{--bg:#fbf4e6;--surface:#fffaf0;--ink:#141210;--muted:#5f5647;--line:rgba(20,18,16,.14);--hd:#0f1f4d;--hdink:#fbf4e6;--hdmuted:#c9d2ec;--acc:#f4b731;--accink:#141210;--acc2:#c4321c;--disp:"Alfa Slab One",Rockwell,Georgia,serif;--body:"Work Sans",system-ui,sans-serif;--dispw:400;--disptt:none;--displs:-.01em;--dispvar:normal;--subc:#f4b731}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
 *{box-sizing:border-box;margin:0;padding:0}
+:root{--cobalt:#1d3a94;--deep:#0f1f4d;--night:#0a1536;--cream:#fbf4e6;--paper:#fffaf0;--chile:#c4321c;--yolk:#f4b731;--ink:#141210;--muted:#5f5647;--slab:"Alfa Slab One",Rockwell,Georgia,serif;
+--tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' fill='%23fbf4e6'/%3E%3Cg fill='%231d3a94'%3E%3Ccircle cx='0' cy='0' r='26'/%3E%3Ccircle cx='96' cy='0' r='26'/%3E%3Ccircle cx='0' cy='96' r='26'/%3E%3Ccircle cx='96' cy='96' r='26'/%3E%3C/g%3E%3Cg fill='%23fbf4e6'%3E%3Ccircle cx='0' cy='0' r='12'/%3E%3Ccircle cx='96' cy='0' r='12'/%3E%3Ccircle cx='0' cy='96' r='12'/%3E%3Ccircle cx='96' cy='96' r='12'/%3E%3C/g%3E%3Ccircle cx='48' cy='48' r='20' fill='none' stroke='%231d3a94' stroke-width='3.5'/%3E%3Cg fill='%231d3a94'%3E%3Cellipse cx='48' cy='33' rx='5' ry='10'/%3E%3Cellipse cx='48' cy='63' rx='5' ry='10'/%3E%3Cellipse cx='33' cy='48' rx='10' ry='5'/%3E%3Cellipse cx='63' cy='48' rx='10' ry='5'/%3E%3C/g%3E%3Ccircle cx='48' cy='48' r='6' fill='%23f4b731'/%3E%3Cg fill='%23c4321c'%3E%3Cpath d='M48 0l6 6-6 6-6-6z'/%3E%3Cpath d='M48 84l6 6-6 6-6-6z'/%3E%3Cpath d='M0 42l6 6-6 6z'/%3E%3Cpath d='M96 42l-6 6 6 6z'/%3E%3C/g%3E%3C/svg%3E")}
 @page{size:100mm 150mm;margin:0}
-body{font-family:var(--body);background:#d9d4cc;min-height:100vh;display:grid;place-items:center;padding:20px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.card{width:100mm;height:150mm;background:var(--hd);color:var(--hdink);display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:12mm 10mm 9mm;position:relative;overflow:hidden;box-shadow:0 20px 60px -20px rgba(0,0,0,.5)}
-.card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4mm;background:linear-gradient(90deg,var(--acc) 0 60%,var(--acc2) 60% 100%)}
-h1{font-family:var(--disp);font-weight:var(--dispw);text-transform:var(--disptt);letter-spacing:var(--displs);font-variation-settings:var(--dispvar);font-size:13mm;line-height:.95}
-.sub{font-family:var(--disp);font-weight:var(--dispw);font-variation-settings:var(--dispvar);text-transform:var(--disptt);font-size:5.5mm;color:var(--subc);margin-top:1.5mm}
-.qr{background:#fff;padding:4mm;border-radius:4mm;width:62mm}
-.qr svg{display:block;width:100%;height:auto}
-.cta{font-size:5mm;font-weight:700;line-height:1.2}
-.cta span{display:block;font-size:3.6mm;font-weight:500;color:var(--hdmuted);margin-top:1.5mm}
-.hint{position:fixed;top:12px;left:0;right:0;text-align:center;font:600 13px system-ui,sans-serif;color:#3a352e}
-@media print{body{background:none;padding:0;display:block}.card{box-shadow:none}.hint{display:none}}
+body{font-family:"Work Sans",system-ui,sans-serif;background:#2b3557;min-height:100vh;display:grid;place-items:center;padding:56px 16px 24px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hint{position:fixed;top:0;left:0;right:0;min-height:38px;display:flex;align-items:center;justify-content:center;padding:0 12px;background:var(--night);color:#d9dff0;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.hint i{font-style:normal;color:var(--yolk);margin:0 6px}
+.card{width:100mm;height:150mm;max-width:100%;background:var(--tile) 0 0/16mm 16mm;padding:6mm;box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.in{height:100%;background:var(--paper);border-radius:2mm;box-shadow:0 0 0 1.2mm var(--cobalt);display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden}
+.hd{width:100%;background:var(--deep);color:#fff;padding:5mm 4mm 4mm}
+.eyebrow{font-size:2.6mm;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--yolk)}
+h1{font-family:var(--slab);font-weight:400;line-height:.9;font-size:10.5mm;margin-top:2mm}
+h1 span{display:block;font-size:.42em;color:var(--yolk);margin-bottom:.5mm}
+.qr{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3mm;padding:4mm}
+.qr .box{position:relative;width:46mm;padding:3.5mm;background:#fff;border:.8mm solid var(--deep);border-radius:1.5mm}
+.qr svg.segno{display:block;width:100%;height:auto}
+.d{position:absolute;width:4mm;height:4mm;background:var(--chile);transform:rotate(45deg)}
+.d.a{left:-2.4mm;top:-2.4mm}.d.b{right:-2.4mm;top:-2.4mm}.d.c{left:-2.4mm;bottom:-2.4mm}.d.e{right:-2.4mm;bottom:-2.4mm}
+.cta{font-family:var(--slab);font-weight:400;font-size:6mm;line-height:1;color:var(--deep)}
+.sub{font-size:3.2mm;font-weight:500;color:var(--muted);line-height:1.3;max-width:52mm}
+.band{width:100%;background:var(--chile);color:var(--cream);border-top:.8mm solid var(--ink);padding:2.6mm 3mm;display:flex;align-items:center;justify-content:center;gap:3mm;font-family:var(--slab);font-size:3.8mm}
+.band i{width:2.4mm;height:2.4mm;background:var(--yolk);transform:rotate(45deg);flex:none}
+@media print{body{background:none;padding:0;display:block}.hint{display:none}.card{box-shadow:none}}
 </style>
 </head>
 <body>
-<p class="hint">Propuesta de tarjeta para mesa · 10 × 15 cm</p>
+<p class="hint"><span>Propuesta de tarjeta para mesa <i>·</i> 10 × 15 cm <i>·</i> aún no es oficial</span></p>
 <div class="card">
-<div><h1>La Consentida</h1></div>
-<div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" class="segno"><path class="qrline" stroke="#111" d="M0 0.5h7m2 0h1m1 0h1m1 0h2m4 0h2m1 0h2m2 0h1m3 0h7m-37 1h1m5 0h1m1 0h3m3 0h4m2 0h5m3 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m4 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m3 0h2m1 0h2m1 0h3m1 0h2m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m2 0h5m1 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m2 0h2m2 0h1m2 0h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m2 0h1m2 0h1m1 0h3m3 0h1m3 0h1m1 0h1m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h3m1 0h2m2 0h3m-36 1h1m1 0h1m2 0h1m1 0h1m5 0h1m2 0h3m5 0h1m1 0h3m2 0h3m1 0h1m-35 1h1m1 0h2m1 0h1m2 0h4m1 0h4m1 0h1m2 0h1m2 0h1m1 0h2m2 0h3m1 0h2m-36 1h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h1m4 0h2m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m2 0h1m-36 1h1m3 0h3m1 0h8m3 0h1m2 0h1m3 0h2m1 0h1m2 0h1m2 0h1m-35 1h3m2 0h2m3 0h5m1 0h4m1 0h1m2 0h3m2 0h1m1 0h1m-33 1h1m1 0h4m1 0h3m4 0h1m2 0h1m3 0h1m3 0h8m1 0h2m-37 1h1m1 0h4m2 0h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h2m1 0h1m4 0h3m1 0h3m-35 1h4m1 0h1m3 0h4m1 0h1m2 0h9m2 0h4m1 0h2m-33 1h1m1 0h1m1 0h6m3 0h2m3 0h1m5 0h2m2 0h1m3 0h1m-35 1h1m1 0h2m1 0h1m1 0h5m1 0h1m1 0h2m1 0h1m1 0h2m1 0h2m1 0h2m2 0h1m2 0h1m1 0h1m-37 1h1m2 0h3m1 0h1m2 0h1m4 0h2m5 0h2m4 0h2m1 0h2m3 0h1m-37 1h4m2 0h2m5 0h1m2 0h2m4 0h6m1 0h2m1 0h3m-31 1h2m1 0h2m2 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h3m4 0h1m1 0h1m-35 1h4m1 0h2m2 0h3m2 0h2m1 0h1m3 0h1m3 0h3m1 0h1m1 0h3m2 0h1m-36 1h3m4 0h1m1 0h2m4 0h4m2 0h2m3 0h2m2 0h3m1 0h1m-35 1h3m2 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h6m2 0h2m1 0h2m3 0h2m-37 1h1m7 0h2m8 0h1m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1m1 0h2m-35 1h1m3 0h1m1 0h3m6 0h2m2 0h1m1 0h2m1 0h1m1 0h4m1 0h2m2 0h2m-37 1h1m1 0h2m1 0h1m5 0h1m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m3 0h1m1 0h2m1 0h3m-36 1h1m1 0h1m3 0h1m1 0h2m1 0h7m1 0h1m2 0h1m1 0h3m1 0h8m-28 1h4m2 0h3m1 0h4m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m-36 1h7m2 0h2m1 0h2m1 0h1m1 0h3m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-37 1h1m5 0h1m6 0h1m1 0h1m4 0h2m4 0h3m3 0h1m2 0h2m-37 1h1m1 0h3m1 0h1m2 0h3m2 0h2m2 0h1m1 0h6m1 0h6m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m4 0h1m2 0h1m5 0h3m1 0h1m1 0h2m1 0h2m3 0h2m-36 1h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m5 0h2m3 0h1m2 0h1m5 0h1m1 0h1m-37 1h1m5 0h1m2 0h1m2 0h5m6 0h1m4 0h3m1 0h2m2 0h1m-37 1h7m1 0h1m4 0h1m5 0h1m4 0h1m1 0h1m1 0h4m1 0h1m2 0h1"/></svg></div>
-<p class="cta">Escanea y ve el menú<span>Arma tu pedido y mándalo por WhatsApp</span></p>
+  <div class="in">
+    <div class="hd"><p class="eyebrow">Antojitos poblanos</p><h1><span>La</span>Consentida</h1></div>
+    <div class="qr">
+      <div class="box"><i class="d a"></i><i class="d b"></i><i class="d c"></i><i class="d e"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" class="segno"><path class="qrline" stroke="#111" d="M0 0.5h7m2 0h1m1 0h1m1 0h2m4 0h2m1 0h2m2 0h1m3 0h7m-37 1h1m5 0h1m1 0h3m3 0h4m2 0h5m3 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m4 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m3 0h2m1 0h2m1 0h3m1 0h2m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m2 0h5m1 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m2 0h2m2 0h1m2 0h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m2 0h1m2 0h1m1 0h3m3 0h1m3 0h1m1 0h1m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h3m1 0h2m2 0h3m-36 1h1m1 0h1m2 0h1m1 0h1m5 0h1m2 0h3m5 0h1m1 0h3m2 0h3m1 0h1m-35 1h1m1 0h2m1 0h1m2 0h4m1 0h4m1 0h1m2 0h1m2 0h1m1 0h2m2 0h3m1 0h2m-36 1h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h1m4 0h2m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m2 0h1m-36 1h1m3 0h3m1 0h8m3 0h1m2 0h1m3 0h2m1 0h1m2 0h1m2 0h1m-35 1h3m2 0h2m3 0h5m1 0h4m1 0h1m2 0h3m2 0h1m1 0h1m-33 1h1m1 0h4m1 0h3m4 0h1m2 0h1m3 0h1m3 0h8m1 0h2m-37 1h1m1 0h4m2 0h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h2m1 0h1m4 0h3m1 0h3m-35 1h4m1 0h1m3 0h4m1 0h1m2 0h9m2 0h4m1 0h2m-33 1h1m1 0h1m1 0h6m3 0h2m3 0h1m5 0h2m2 0h1m3 0h1m-35 1h1m1 0h2m1 0h1m1 0h5m1 0h1m1 0h2m1 0h1m1 0h2m1 0h2m1 0h2m2 0h1m2 0h1m1 0h1m-37 1h1m2 0h3m1 0h1m2 0h1m4 0h2m5 0h2m4 0h2m1 0h2m3 0h1m-37 1h4m2 0h2m5 0h1m2 0h2m4 0h6m1 0h2m1 0h3m-31 1h2m1 0h2m2 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h3m4 0h1m1 0h1m-35 1h4m1 0h2m2 0h3m2 0h2m1 0h1m3 0h1m3 0h3m1 0h1m1 0h3m2 0h1m-36 1h3m4 0h1m1 0h2m4 0h4m2 0h2m3 0h2m2 0h3m1 0h1m-35 1h3m2 0h2m1 0h1m1 0h1m2 0h2m1 0h1m1 0h6m2 0h2m1 0h2m3 0h2m-37 1h1m7 0h2m8 0h1m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1m1 0h2m-35 1h1m3 0h1m1 0h3m6 0h2m2 0h1m1 0h2m1 0h1m1 0h4m1 0h2m2 0h2m-37 1h1m1 0h2m1 0h1m5 0h1m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m3 0h1m1 0h2m1 0h3m-36 1h1m1 0h1m3 0h1m1 0h2m1 0h7m1 0h1m2 0h1m1 0h3m1 0h8m-28 1h4m2 0h3m1 0h4m1 0h1m2 0h1m1 0h1m3 0h1m2 0h1m-36 1h7m2 0h2m1 0h2m1 0h1m1 0h3m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-37 1h1m5 0h1m6 0h1m1 0h1m4 0h2m4 0h3m3 0h1m2 0h2m-37 1h1m1 0h3m1 0h1m2 0h3m2 0h2m2 0h1m1 0h6m1 0h6m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m4 0h1m2 0h1m5 0h3m1 0h1m1 0h2m1 0h2m3 0h2m-36 1h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m5 0h2m3 0h1m2 0h1m5 0h1m1 0h1m-37 1h1m5 0h1m2 0h1m2 0h5m6 0h1m4 0h3m1 0h2m2 0h1m-37 1h7m1 0h1m4 0h1m5 0h1m4 0h1m1 0h1m1 0h4m1 0h1m2 0h1"/></svg></div>
+      <p class="cta">Escanea y pide</p>
+      <p class="sub">Ve la carta y manda tu pedido por WhatsApp</p>
+    </div>
+    <div class="band">Gorditas<i></i>Chalupas<i></i>Memelas</div>
+  </div>
 </div>
 </body>
 </html>
