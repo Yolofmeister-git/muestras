@@ -2,198 +2,318 @@
 <html lang="es-MX">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>Tú y yo café de especialidad · El Carmen, Puebla</title>
 <meta name="description" content="Café de especialidad, filtrados, postres de la casa y un menú que cambia por temporada. C. 4 Sur 2310, El Carmen, Puebla. Abierto de 10 a.m. a 10 p.m. Pet friendly.">
 <meta property="og:title" content="Tú y yo café de especialidad">
 <meta property="og:description" content="Barra de café de especialidad en El Carmen, Puebla. Galletas y postres de la casa, de 10 a.m. a 10 p.m.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1200&q=80&auto=format&fit=crop">
+<meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80&auto=format&fit=crop">
+<meta name="theme-color" content="#1e130d">
+<script>(function(r){if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('js');setTimeout(function(){if(!window.__m)r.classList.remove('js')},3000)}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1800&q=78&auto=format&fit=crop">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --crema:#f3ebdf;
-  --leche:#faf6ef;
-  --espresso:#2b1d16;
-  --tostado:#6b4b3a;
-  --barro:#c0582f;
-  --line:rgba(43,29,22,.16);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--crema);color:var(--espresso);line-height:1.55;padding-top:42px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%}
 a{color:inherit}
-.strip{position:fixed;top:0;left:0;right:0;z-index:50;height:42px;display:flex;align-items:center;justify-content:center;padding:0 18px;background:var(--espresso);color:#eadfce;font-size:12px;line-height:1.3;text-align:center}
-.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+ul{list-style:none}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* motion: only when JS confirmed it is running and the visitor did not ask for less motion */
+.js .is-split .w{display:inline-block;white-space:nowrap;overflow:hidden;vertical-align:top;padding:.04em .04em .14em;margin:-.04em -.04em -.14em}
+.js .is-split .c{display:inline-block;transform:translate3d(0,115%,0) rotate(4deg);transform-origin:0 100%;transition:transform 1.15s var(--ease);transition-delay:calc(var(--i) * var(--sd,45ms) + var(--d,0ms))}
+.js .is-split.in .c{transform:none}
+.js [data-r]{opacity:0;transform:translate3d(0,40px,0);transition:opacity .9s var(--ease),transform 1.15s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-r].in{opacity:1;transform:none}
+.js [data-stagger]>*{opacity:0;transform:translate3d(0,30px,0);transition:opacity .8s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--i) * var(--st,70ms) + var(--d,0ms))}
+.js [data-stagger].in>*{opacity:1;transform:none}
+.js [data-clip]{clip-path:inset(100% 0 0 0);transition:clip-path 1.5s var(--ease)}
+.js [data-clip].in{clip-path:inset(0 0 0 0)}
+.js [data-line]{transform:scaleX(0);transform-origin:0 50%;transition:transform 1.3s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-line].in{transform:scaleX(1)}
+.js .fab{transform:translate3d(0,170%,0)}
+.js .fab.show{transform:none}
+.marquee{overflow:hidden;white-space:nowrap}
+.marquee .run{display:inline-flex;width:max-content;animation:mq var(--mq,40s) linear infinite}
+.marquee:hover .run{animation-play-state:paused}
+@keyframes mq{to{transform:translate3d(-50%,0,0)}}
+.hs-track{display:flex;width:max-content}
+@media (max-width:899px){.hs-sticky{overflow-x:auto;scroll-padding-inline:22px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}.hs-sticky::-webkit-scrollbar{display:none}.hs-track>*{scroll-snap-align:start}}
+@media (min-width:900px){.hs-sticky{overflow-x:auto}.js .hs-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}.js .hs-track{will-change:transform}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+.js .is-lit .lw{opacity:.2;transition:opacity .35s linear}
+.js .is-lit .lw.on{opacity:1}
 
-.hero{display:grid}
-.hero-copy{padding:48px 22px 40px;display:flex;flex-direction:column}
-.place{font-size:14px;font-weight:500;color:var(--tostado);display:flex;gap:10px;align-items:center}
-.place::before{content:"";width:28px;height:2px;background:var(--barro)}
-h1{font-weight:800;font-size:clamp(88px,29vw,220px);line-height:.8;letter-spacing:-.06em;margin:22px 0 10px}
-h1 span{color:var(--barro)}
-.kind{font-size:clamp(20px,5.6vw,30px);font-weight:500;letter-spacing:-.02em;color:var(--tostado)}
-.lede{font-size:19px;max-width:32ch;margin-top:26px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:background .15s ease,color .15s ease}
+:root{
+  --esp:#1e130d; --roast:#2c1c13; --crema:#f1e8da; --oat:#e6d9c4; --latte:#c69c72;
+  --tang:#ff6a2b; --tang2:#ff8a52; --ink:#1e130d; --muted:#6d5b4b;
+  --ease:cubic-bezier(.65,0,.35,1); --out:cubic-bezier(.16,1,.3,1);
+  --disp:"Bricolage Grotesque",system-ui,sans-serif;
+}
+body{font-family:"Figtree",system-ui,sans-serif;background:var(--crema);color:var(--ink);line-height:1.55;padding-top:38px}
+.d{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;letter-spacing:-.02em}
+.wrap{width:100%;max-width:1300px;margin:0 auto;padding:0 22px}
+@media (min-width:760px){.wrap{padding:0 44px}}
+:root{--out:cubic-bezier(.16,1,.3,1)}
+.js [data-r],.js [data-stagger]>*{transition-timing-function:var(--out)}
+
+.strip{position:fixed;inset:0 0 auto 0;z-index:60;height:38px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 14px;background:var(--crema);color:var(--esp);font-size:12px;font-weight:600;text-align:center;line-height:1.25}
+.strip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--tang);flex:none}
+.strip .bar{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--esp);transform:scaleX(0);transform-origin:0 50%}
+
+/* hero */
+.hero{position:relative;height:calc(100svh - 38px);min-height:640px;max-height:1040px;overflow:hidden;background:var(--esp);color:var(--crema)}
+.hero-photo{position:absolute;inset:-6% 0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;animation:kb 24s ease-in-out infinite alternate;filter:saturate(.9) contrast(1.05)}
+@keyframes kb{from{transform:scale(1.05)}to{transform:scale(1.2) translate3d(0,-2%,0)}}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 30%,transparent 0%,rgba(30,19,13,.25) 45%,rgba(30,19,13,.92) 85%),linear-gradient(to top,rgba(30,19,13,.97) 0%,rgba(30,19,13,.78) 42%,transparent 72%)}
+.hero-in{position:absolute;inset:auto 0 0 0;z-index:2;padding-bottom:30px}
+.hero .top{position:absolute;z-index:2;top:22px;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-start}
+.hero .loc{font-size:13px;font-weight:600;line-height:1.35;color:var(--oat)}
+.hero .loc b{display:block;color:var(--crema)}
+h1{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(100px,36vw,420px);line-height:.8;letter-spacing:-.03em;word-spacing:.06em;margin-left:-.04em}
+h1 .y{color:var(--tang);margin:0 .04em}
+.lede{font-size:clamp(17px,4.5vw,22px);max-width:30ch;margin-top:18px;color:var(--oat)}
+.lede b{color:var(--crema);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16.5px;text-decoration:none;transition:transform .55s cubic-bezier(.34,1.56,.64,1),background .3s,color .3s;overflow:hidden;isolation:isolate}
+.btn:active{transform:scale(.95)!important}
 .btn svg{width:22px;height:22px;flex:none}
-.btn-main{background:var(--espresso);color:var(--leche);flex:1 1 100%}
-.btn-main:hover{background:var(--barro)}
-.btn-line{border:1.5px solid var(--espresso);flex:1 1 100%}
-.btn-line:hover{background:var(--espresso);color:var(--leche)}
-.facts{display:flex;gap:28px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
-.facts div{font-size:14px;color:var(--tostado);line-height:1.35}
-.facts b{display:block;font-size:30px;font-weight:800;color:var(--espresso);letter-spacing:-.03em;line-height:1.1}
-.hero-photo{min-height:440px;background:#8a6a55 url("https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1600&q=80&auto=format&fit=crop") center/cover no-repeat}
+.btn-tang{background:var(--tang);color:var(--esp)}
+.btn-tang::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--crema);border-radius:inherit;transform:scale(0);transition:transform .5s var(--out)}
+.btn-tang:hover::before{transform:scale(1)}
+.btn-ghost{background:rgba(241,232,218,.1);border:1.5px solid rgba(241,232,218,.4);color:var(--crema)}
+.btn-ghost:hover{background:var(--crema);color:var(--esp)}
+@media (max-width:520px){.ctas .btn{flex:1 1 100%}}
+.badge{width:104px;height:104px;position:relative;display:grid;place-items:center;flex:none}
+.badge svg{position:absolute;inset:0;animation:spin 18s linear infinite}
+.badge b{font-family:var(--disp);font-weight:800;font-size:30px;line-height:1;color:var(--esp);position:relative}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (min-width:900px){
+  .hero-in .wrap{display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px}
+  .hero .top{top:36px}
+  .badge{width:150px;height:150px}.badge b{font-size:44px}
+}
 
-/* menu */
-.menu{padding:80px 0 72px;background:var(--leche)}
-.head{display:grid;gap:14px}
-h2{font-weight:800;font-size:clamp(44px,12vw,96px);line-height:.92;letter-spacing:-.05em}
-h2 span{color:var(--barro)}
-.head p{font-size:18px;color:var(--tostado);max-width:40ch}
-.cols{display:grid;gap:44px;margin-top:48px}
-.col h3{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--barro);padding-bottom:12px;border-bottom:1.5px solid var(--espresso)}
-.col ul{list-style:none}
-.col li{font-size:clamp(24px,6.4vw,32px);font-weight:500;letter-spacing:-.03em;line-height:1.15;padding:14px 0;border-bottom:1px solid var(--line)}
-.perks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;font-weight:500;font-size:17px}
-.perks span{display:flex;align-items:center;gap:10px}
-.perks span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--barro)}
+/* ticker */
+.tick{background:var(--esp);color:var(--crema);padding:20px 0;--mq:34s;border-top:1px solid rgba(241,232,218,.12)}
+.tick .run span{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:700;font-size:clamp(28px,6vw,56px);line-height:1;display:inline-flex;align-items:center;gap:24px;padding-right:24px;text-transform:uppercase;letter-spacing:-.01em}
+.tick .run span::after{content:"";width:22px;height:22px;flex:none;background:var(--tang);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
 
-.trio{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:4px;background:var(--leche)}
-.trio{height:120vw;max-height:560px}
-.trio div{background:#8a6a55 center/cover no-repeat}
-.trio .t3{display:none}
+/* rotating line */
+.season{padding:100px 0 90px}
+.season .k{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--tang)}
+.big{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(50px,13.4vw,170px);line-height:.88;letter-spacing:-.04em;margin-top:18px}
+.slot{display:inline-grid;vertical-align:bottom;overflow:hidden;height:.92em;color:var(--tang)}
+.slot span{grid-area:1/1;transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.js .slot span{transform:translateY(105%);opacity:0}
+.js .slot span.on{transform:none;opacity:1}
+.js .slot span.out{transform:translateY(-105%);opacity:0}
+.season p.sub{margin-top:26px;font-size:19px;max-width:38ch;color:var(--muted)}
+/* non-JS: show only the first word */
+html:not(.js) .slot span+span{display:none}
+
+/* bar list */
+.bar-sec{background:var(--roast);color:var(--crema);padding:90px 0}
+.bar-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.h2{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(48px,12vw,140px);line-height:.88;letter-spacing:-.04em}
+.h2 em{font-style:normal;color:var(--tang)}
+.bar-head p{max-width:30ch;color:var(--oat);font-size:17px}
+.drinks{margin-top:50px;border-top:1.5px solid rgba(241,232,218,.18)}
+.drink{position:relative;display:grid;grid-template-columns:62px 1fr auto;align-items:center;gap:16px;padding:16px 0;border-bottom:1.5px solid rgba(241,232,218,.18);overflow:hidden}
+.drink .th{width:62px;height:62px;border-radius:50%;overflow:hidden}
+.drink .th img{width:100%;height:100%;object-fit:cover}
+.drink .nm{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(34px,9vw,96px);line-height:.95;letter-spacing:-.03em;transition:transform .6s var(--out),color .3s}
+.drink .no{font-size:13px;font-weight:600;color:var(--latte);font-variant-numeric:tabular-nums}
+.drink::after{content:"";position:absolute;left:0;right:0;bottom:-1.5px;height:1.5px;background:var(--tang);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--out)}
+.drink:hover::after{transform:scaleX(1)}
+.drink:hover .nm{transform:translateX(16px);color:var(--tang)}
+.peek{position:fixed;left:0;top:0;z-index:40;width:300px;height:380px;border-radius:20px;overflow:hidden;pointer-events:none;opacity:0;transform:translate3d(-50%,-50%,0) scale(.6);transition:opacity .35s,scale .5s var(--out);display:none}
+.peek img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
+.peek img.on{opacity:1}
+@media (hover:hover) and (pointer:fine) and (min-width:900px){.peek{display:block}.drink .th{display:none}.drink{grid-template-columns:1fr auto;padding:22px 0}}
+@media (min-width:900px){.bar-sec{padding:150px 0}}
+
+/* desserts: sticky swap */
+.casa{padding:100px 0}
+.casa-grid{display:grid;gap:40px;margin-top:46px}
+.frame{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:4/5;background:var(--oat)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .8s var(--out),transform 1.4s var(--out)}
+.frame img.on{opacity:1;transform:none}
+.frame figcaption{position:absolute;left:14px;bottom:14px;z-index:2;font-size:12px;font-weight:600;background:var(--crema);padding:6px 12px;border-radius:99px}
+.treats li{padding:26px 0;border-bottom:1.5px solid rgba(30,19,13,.14);transition:opacity .5s}
+.treats li:first-child{border-top:1.5px solid rgba(30,19,13,.14)}
+.treats .t{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(34px,8.4vw,72px);line-height:.95;letter-spacing:-.03em}
+.treats .s{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tang);margin-bottom:8px}
+@media (max-width:899px){.casa-side{display:none}.treats li .m{display:block;margin-top:16px;border-radius:20px;overflow:hidden;aspect-ratio:16/11}.treats li .m img{width:100%;height:118%;object-fit:cover;margin-top:-9%}}
+@media (min-width:900px){
+  .casa{padding:150px 0}
+  .casa-grid{grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+  .casa-side{position:sticky;top:90px}
+  .treats li{padding:9vh 0}
+  .treats li .m{display:none}
+  .js .treats li{opacity:.28}
+  .js .treats li.on{opacity:1}
+}
+
+/* numbers */
+.nums{background:var(--tang);color:var(--esp);padding:70px 0}
+.nums ul{display:grid;grid-template-columns:1fr 1fr;gap:34px 20px}
+.nums li b{display:block;font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(64px,17vw,150px);line-height:.85;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.nums li b.sm{font-size:clamp(40px,9.6vw,84px);line-height:.95}
+.nums li span{display:block;margin-top:8px;font-weight:600;font-size:15px}
+@media (min-width:900px){.nums{padding:110px 0}.nums ul{grid-template-columns:repeat(4,1fr)}}
 
 /* visit */
-.visit{padding:80px 0;background:var(--espresso);color:var(--leche)}
-.visit h2 span{color:#e48a5f}
-.vgrid{display:grid;gap:44px;margin-top:44px}
-.k{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#e48a5f;margin-bottom:12px}
-.big{font-size:clamp(30px,8.4vw,50px);font-weight:800;letter-spacing:-.045em;line-height:1}
-.small{font-size:17px;color:#d6c8b6;margin-top:12px;max-width:36ch}
-.addr{font-size:24px;font-weight:500;line-height:1.3;letter-spacing:-.02em;max-width:22ch}
-.visit .btn-main{background:var(--leche);color:var(--espresso)}
-.visit .btn-main:hover{background:#e48a5f}
-.visit .btn-line{border-color:var(--leche);color:var(--leche)}
-.visit .btn-line:hover{background:var(--leche);color:var(--espresso)}
-.visit .actions{margin-top:22px}
+.visit{background:var(--esp);color:var(--crema);padding:100px 0 80px}
+.now{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:99px;background:rgba(241,232,218,.08);font-weight:600;font-size:14px}
+.now i{width:9px;height:9px;border-radius:50%;background:var(--latte)}
+.now.open i{background:#5bd68a;box-shadow:0 0 0 0 rgba(91,214,138,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(91,214,138,0)}100%{box-shadow:0 0 0 0 rgba(91,214,138,0)}}
+.vgrid{display:grid;gap:50px;margin-top:40px}
+.label{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--tang);margin-bottom:12px}
+.hrs{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(70px,20vw,170px);line-height:.85;letter-spacing:-.04em}
+.hrs span{color:var(--latte)}
+.vtext{margin-top:18px;color:var(--oat);font-size:17px;max-width:40ch}
+.addr{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:700;font-size:clamp(34px,8vw,60px);line-height:.98;letter-spacing:-.02em}
+.vlinks{margin-top:24px;display:grid}
+.ul{position:relative;display:flex;align-items:center;padding:16px 0;font-weight:600;font-size:18px;text-decoration:none;border-bottom:1.5px solid rgba(241,232,218,.16)}
+.ul::after{content:"";position:absolute;left:0;bottom:-1.5px;height:1.5px;width:100%;background:var(--tang);transform:scaleX(0);transform-origin:right;transition:transform .55s var(--out)}
+.ul:hover::after{transform:scaleX(1);transform-origin:left}
+.ul .arr{margin-left:auto;transition:transform .45s var(--out)}
+.ul:hover .arr{transform:translate(4px,-4px)}
+@media (min-width:900px){.visit{padding:150px 0 110px}.vgrid{grid-template-columns:1fr 1fr;gap:90px}}
 
-footer{background:#1d130e;color:#b7a693;padding:40px 0 112px;font-size:14px}
-footer .wrap{display:grid;gap:12px}
-.fname{font-size:30px;font-weight:800;letter-spacing:-.05em;color:var(--leche)}
-.fname span{color:#e48a5f}
-footer a.fb{color:var(--leche);font-weight:700;text-decoration:none;border-bottom:1.5px solid #e48a5f;padding:6px 0;justify-self:start}
+footer{background:var(--esp);color:#9c8a78;padding:20px 0 120px;font-size:14px;overflow:hidden}
+.fbig{font-family:var(--disp);font-variation-settings:"wdth" 75;font-weight:800;font-size:clamp(110px,40vw,520px);line-height:.78;letter-spacing:-.03em;word-spacing:.06em;color:var(--roast);white-space:nowrap;margin-bottom:26px}
+.fbig span{color:var(--tang)}
+.frow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px}
+.frow a{color:var(--crema);font-weight:700;text-decoration:none;border-bottom:2px solid var(--tang)}
+@media (min-width:760px){footer{padding-bottom:44px}}
 
-.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
-.dock .btn{width:100%;box-shadow:0 12px 30px rgba(43,29,22,.35)}
-
-@media (min-width:760px){
-  body{padding-top:34px}.strip{height:34px}
-  .btn-main,.btn-line{flex:0 0 auto}
-  .cols{grid-template-columns:1fr 1fr 1fr;column-gap:48px}
-  .trio{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)}
-  .trio{height:520px}
-  .trio .t3{display:block}
-  .vgrid{grid-template-columns:1fr 1fr}
-  .dock{display:none}
-  footer{padding-bottom:40px}
-  .head{grid-template-columns:1fr auto;align-items:end}
-}
-@media (min-width:1024px){
-  .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:calc(100vh - 34px)}
-  .hero-copy{padding:72px 64px 56px max(22px,calc((100vw - 1200px)/2 + 22px));justify-content:center}
-  h1{font-size:min(220px,15vw)}
-  .menu,.visit{padding:120px 0}
-}
+.fab{position:fixed;z-index:55;right:16px;bottom:16px;left:16px;display:flex;justify-content:center;transition:transform .8s cubic-bezier(.34,1.56,.64,1)}
+.fab a{width:100%;max-width:420px;box-shadow:0 18px 40px -12px rgba(30,19,13,.6)}
+@media (min-width:760px){.fab{left:auto;right:28px;bottom:28px}.fab a{width:auto}}
 </style>
 </head>
 <body>
-<div class="strip">Propuesta de página para Tú y yo café de especialidad · aún no es su sitio oficial</div>
+<div class="strip" role="note">Propuesta de página para Tú y yo café de especialidad · aún no es su sitio oficial<span class="bar" data-progress aria-hidden="true"></span></div>
 
-<header class="hero">
-  <div class="hero-copy">
-    <p class="place">El Carmen, Puebla</p>
-    <h1>tú <span>y</span> yo</h1>
-    <p class="kind">café de especialidad</p>
-    <p class="lede">Una barra tranquila para tomarte un buen café, con galletas y postres de la casa y una carta que cambia con la temporada.</p>
-    <div class="actions">
-      <a class="btn btn-main" href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>
-        Pedir por WhatsApp</a>
-      <a class="btn btn-line" href="tel:+522212537274">Llamar · 221 253 7274</a>
-    </div>
-    <div class="facts">
-      <div><b>4.8</b>en Google<br>483 reseñas</div>
-      <div><b>10 a 10</b>abierto<br>de 10 a.m. a 10 p.m.</div>
+<header class="hero" data-hero>
+  <div class="hero-photo" data-par="0.3"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1800&q=78&auto=format&fit=crop" alt="Dos tazas de café con arte latte brindando sobre una mesa" fetchpriority="high"></div>
+  <div class="top wrap">
+    <p class="loc" data-r style="--d:200ms"><b>Café de especialidad</b>C. 4 Sur 2310, El Carmen, Puebla</p>
+  </div>
+  <div class="hero-in">
+    <div class="wrap">
+      <div>
+        <h1 data-split="words" data-now style="--sd:130ms;--d:200ms">Tú <span class="y">y</span> yo</h1>
+        <p class="lede" data-r style="--d:750ms">Barra de café de especialidad con postres de la casa y un menú que <b>cambia con la temporada</b>.</p>
+        <div class="ctas" data-r style="--d:900ms">
+          <a class="btn btn-tang" data-mag href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>Pedir por WhatsApp</a>
+          <a class="btn btn-ghost" data-mag href="tel:+522212537274">Llamar · 221 253 7274</a>
+        </div>
+      </div>
+      <a class="badge" href="#numeros" data-r style="--d:1100ms" aria-label="4.8 en Google">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="bd" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><circle cx="100" cy="100" r="98" fill="#f1e8da"/><text font-family="Figtree,sans-serif" font-size="16" font-weight="700" letter-spacing="3.6" fill="#1e130d"><textPath href="#bd">4.8 EN GOOGLE · PET FRIENDLY · CAFÉ ·</textPath></text></svg>
+        <b>4.8</b>
+      </a>
     </div>
   </div>
-  <div class="hero-photo" role="img" aria-label="Taza de café con arte latte"></div>
 </header>
 
-<section class="menu" id="carta">
+<div class="tick marquee" aria-hidden="true"><div class="run">
+  <span>Capuchino</span><span>Mocha</span><span>Flat white</span><span>Filtrados</span><span>Mocktails</span><span>Rol de canela</span><span>Cheesecake de mango</span>
+  <span>Capuchino</span><span>Mocha</span><span>Flat white</span><span>Filtrados</span><span>Mocktails</span><span>Rol de canela</span><span>Cheesecake de mango</span>
+</div></div>
+
+<section class="season">
   <div class="wrap">
-    <div class="head">
-      <h2>En la <span>barra</span></h2>
-      <p>La carta cambia cada mes y con la temporada. Esto es lo que suele haber.</p>
-    </div>
-    <div class="cols">
-      <div class="col">
-        <h3>Café</h3>
-        <ul>
-          <li>Café de especialidad</li>
-          <li>Filtrados</li>
-          <li>Flat white</li>
-          <li>Capuchino</li>
-          <li>Mocha</li>
-          <li>Mocktails</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>De la casa</h3>
-        <ul>
-          <li>Galleta red velvet con queso</li>
-          <li>Galleta cuatro chocolates</li>
-          <li>Rol de canela</li>
-          <li>Cheesecake de mango</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Para comer</h3>
-        <ul>
-          <li>Sándwich de pulled pork</li>
-          <li>Chilaquiles</li>
-        </ul>
-      </div>
-    </div>
-    <div class="perks"><span>Pet friendly</span><span>Para tomar aquí</span><span>Para llevar</span></div>
+    <p class="k" data-r>El menú</p>
+    <p class="big" data-r>Cambia con la temporada. Hoy pide un <span class="slot" aria-live="off"><span class="on">filtrado.</span><span>flat white.</span><span>mocha.</span><span>capuchino.</span><span>mocktail.</span></span></p>
+    <p class="sub" data-r>La carta rota cada mes o cada temporada. Pregunta por WhatsApp qué hay en la barra esta semana.</p>
   </div>
 </section>
 
-<div class="trio" aria-hidden="true">
-  <div style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80&auto=format&fit=crop')"></div>
-  <div style="background-image:url('https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=900&q=80&auto=format&fit=crop')"></div>
-  <div class="t3" style="background-image:url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80&auto=format&fit=crop')"></div>
-</div>
+<section class="bar-sec" id="barra">
+  <div class="wrap">
+    <div class="bar-head">
+      <h2 class="h2" data-split="words">En la <em>barra</em></h2>
+      <p data-r>Café de especialidad preparado por los baristas, lo más mencionado en las reseñas.</p>
+    </div>
+    <ul class="drinks" data-stagger style="--st:80ms">
+      <li class="drink" data-img="0"><span class="th"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=200&q=70&auto=format&fit=crop" alt=""></span><span class="nm">Filtrados</span><span class="no">01</span></li>
+      <li class="drink" data-img="1"><span class="th"><img loading="lazy" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=200&q=70&auto=format&fit=crop" alt=""></span><span class="nm">Capuchino</span><span class="no">02</span></li>
+      <li class="drink" data-img="2"><span class="th"><img loading="lazy" src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=200&q=70&auto=format&fit=crop" alt=""></span><span class="nm">Flat white</span><span class="no">03</span></li>
+      <li class="drink" data-img="3"><span class="th"><img loading="lazy" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=200&q=70&auto=format&fit=crop" alt=""></span><span class="nm">Mocha</span><span class="no">04</span></li>
+      <li class="drink" data-img="4"><span class="th"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&q=70&auto=format&fit=crop" alt=""></span><span class="nm">Mocktails</span><span class="no">05</span></li>
+    </ul>
+  </div>
+  <div class="peek" aria-hidden="true">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=75&auto=format&fit=crop" alt="">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&q=75&auto=format&fit=crop" alt="">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=600&q=75&auto=format&fit=crop" alt="">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=75&auto=format&fit=crop" alt="">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=75&auto=format&fit=crop" alt="">
+  </div>
+</section>
+
+<section class="casa" id="casa">
+  <div class="wrap">
+    <h2 class="h2" data-split="words">De la <em>casa</em></h2>
+    <div class="casa-grid">
+      <div class="casa-side">
+        <figure class="frame">
+          <img class="on" loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=1000&q=75&auto=format&fit=crop" alt="Galletas con chispas de chocolate">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=1000&q=75&auto=format&fit=crop" alt="Roles de canela">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=1000&q=75&auto=format&fit=crop" alt="Rebanada de cheesecake">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=1000&q=75&auto=format&fit=crop" alt="Sándwich">
+          <figcaption>Fotos ilustrativas</figcaption>
+        </figure>
+      </div>
+      <ul class="treats">
+        <li data-i="0"><p class="s">Galletas</p><p class="t">Red velvet con queso y cuatro chocolates</p><span class="m" data-clip><img loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=900&q=72&auto=format&fit=crop" alt="Galletas con chispas de chocolate"></span></li>
+        <li data-i="1"><p class="s">Pan</p><p class="t">Rol de canela</p><span class="m" data-clip><img loading="lazy" src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=900&q=72&auto=format&fit=crop" alt="Roles de canela"></span></li>
+        <li data-i="2"><p class="s">Postre</p><p class="t">Cheesecake de mango</p><span class="m" data-clip><img loading="lazy" src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=900&q=72&auto=format&fit=crop" alt="Rebanada de cheesecake"></span></li>
+        <li data-i="3"><p class="s">Para comer</p><p class="t">Sándwich de pulled pork y chilaquiles</p><span class="m" data-clip><img loading="lazy" src="https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=900&q=72&auto=format&fit=crop" alt="Sándwich"></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="nums" id="numeros">
+  <div class="wrap">
+    <ul data-stagger>
+      <li><b data-count="4.8">4.8</b><span>en Google</span></li>
+      <li><b data-count="483" data-dur="1800">483</b><span>reseñas</span></li>
+      <li><b>10—10</b><span>de la mañana a la noche</span></li>
+      <li><b class="sm">Pet friendly</b><span>tu perro también entra</span></li>
+    </ul>
+  </div>
+</section>
 
 <section class="visit" id="visita">
   <div class="wrap">
-    <h2>Nos vemos <span>aquí</span></h2>
+    <p class="now" id="now"><i></i><span>Abierto de 10 a.m. a 10 p.m.</span></p>
     <div class="vgrid">
-      <div>
-        <p class="k">Horario</p>
-        <p class="big">10:00 a.m. a 10:00 p.m.</p>
-        <p class="small">Entre $100 y $200 por persona. Pet friendly: tu perro también es bienvenido.</p>
+      <div data-r>
+        <p class="label">Horario</p>
+        <p class="hrs">10<span>—</span>10</p>
+        <p class="vtext">De 10 de la mañana a 10 de la noche, según Google. Confirma por WhatsApp antes de venir, sobre todo en días festivos.</p>
       </div>
-      <div>
-        <p class="k">Dónde estamos</p>
+      <div data-r style="--d:150ms">
+        <p class="label">Dónde estamos</p>
         <p class="addr">C. 4 Sur 2310, El Carmen, 72530 Puebla, Pue.</p>
-        <div class="actions">
-          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=T%C3%BA%20y%20yo%20caf%C3%A9%20de%20especialidad%2C%20C.%204%20Sur%202310%2C%20El%20Carmen%2C%2072530%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
-          <a class="btn btn-line" href="tel:+522212537274">Llamar</a>
+        <div class="vlinks">
+          <a class="ul" href="https://www.google.com/maps/search/?api=1&query=T%C3%BA%20y%20yo%20caf%C3%A9%20de%20especialidad%2C%20C.%204%20Sur%202310%2C%20El%20Carmen%2C%2072530%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar <span class="arr" aria-hidden="true">&#8599;</span></a>
+          <a class="ul" href="https://wa.me/522212537274?text=Hola%2C%20%C2%BFqu%C3%A9%20hay%20esta%20semana%3F">Preguntar qué hay esta semana <span class="arr" aria-hidden="true">&#8599;</span></a>
+          <a class="ul" href="tel:+522212537274">Llamar · 221 253 7274 <span class="arr" aria-hidden="true">&#8599;</span></a>
         </div>
       </div>
     </div>
@@ -202,13 +322,161 @@ footer a.fb{color:var(--leche);font-weight:700;text-decoration:none;border-botto
 
 <footer>
   <div class="wrap">
-    <p class="fname">tú <span>y</span> yo</p>
-    <p>Café de especialidad · C. 4 Sur 2310, El Carmen, Puebla · 221 253 7274</p>
-    <a class="fb" href="https://www.facebook.com/tuyyobarradecafe" target="_blank" rel="noopener">Facebook</a>
-    <p style="font-size:12px;color:#857563">Fotos ilustrativas: Unsplash.</p>
+    <p class="fbig" aria-hidden="true">Tú <span>y</span> yo</p>
+    <div class="frow">
+      <p>Tú y yo café de especialidad · C. 4 Sur 2310, El Carmen, Puebla · Para tomar aquí o para llevar</p>
+      <a href="https://www.facebook.com/tuyyobarradecafe" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p style="font-size:12px;color:#6f5f50;margin-top:18px">Fotos ilustrativas: Unsplash.</p>
   </div>
 </footer>
 
-<div class="dock"><a class="btn btn-main" href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a></div>
+<div class="fab"><a class="btn btn-tang" data-mag href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>Pedir por WhatsApp</a></div>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  window.__m=1;
+  if(!root.classList.contains('js')) return; /* reduced motion or no motion: everything is already visible */
+  var $$=function(s,c){return Array.prototype.slice.call((c||d).querySelectorAll(s));};
+
+  /* split headlines into masked words / chars */
+  $$('[data-split]').forEach(function(el){
+    var mode=el.getAttribute('data-split'), i=0, label=el.textContent.replace(/\s+/g,' ').trim();
+    (function wrap(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=d.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(tok){
+            if(!tok) return;
+            if(/^\s+$/.test(tok)){frag.appendChild(d.createTextNode(' '));return;}
+            var w=d.createElement('span'); w.className='w';
+            var parts=mode==='chars'?Array.from(tok):[tok];
+            parts.forEach(function(p){var s=d.createElement('span');s.className='c';s.textContent=p;s.style.setProperty('--i',i++);w.appendChild(s);});
+            frag.appendChild(w);
+          });
+          n.parentNode.replaceChild(frag,n);
+        } else if(n.nodeType===1 && n.tagName!=='BR'){ wrap(n); }
+      });
+    })(el);
+    if(mode==='chars'){ el.setAttribute('aria-label',label); $$('.w',el).forEach(function(w){w.setAttribute('aria-hidden','true');}); }
+    el.classList.add('is-split');
+  });
+
+  /* stagger indexes */
+  $$('[data-stagger]').forEach(function(el){ Array.prototype.slice.call(el.children).forEach(function(c,k){c.style.setProperty('--i',k);}); });
+
+  /* counters start at zero */
+  var counters=$$('[data-count]');
+  counters.forEach(function(el){ var dec=(el.getAttribute('data-count').split('.')[1]||'').length; el.textContent=(0).toFixed(dec); });
+  function runCount(el){
+    var target=parseFloat(el.getAttribute('data-count')), dec=(el.getAttribute('data-count').split('.')[1]||'').length, t0=null, dur=+(el.getAttribute('data-dur')||1600);
+    function step(t){ if(!t0)t0=t; var p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,4), v=target*e;
+      el.textContent=dec?v.toFixed(dec):Math.round(v).toLocaleString('es-MX');
+      if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  /* scroll reveals */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(!e.isIntersecting) return; var t=e.target; io.unobserve(t);
+      (proxy.get(t)||[t]).forEach(function(x){ x.classList.add('in'); if(x.hasAttribute('data-count')) runCount(x); }); });
+  },{rootMargin:'0px 0px -10% 0px',threshold:0.01});
+  /* clip-path hides an element from IntersectionObserver, so clipped elements are watched through their parent */
+  var proxy=new Map();
+  $$('[data-r],[data-split]:not([data-now]),[data-clip],[data-stagger],[data-count],[data-line]').forEach(function(el){
+    var w=el.hasAttribute('data-clip')?el.parentElement:el;
+    if(w===el){ (proxy.get(el)||proxy.set(el,[]).get(el)).push(el); }
+    else { (proxy.get(w)||proxy.set(w,[]).get(w)).push(el); }
+    io.observe(w);
+  });
+
+  /* hero entrance after fonts */
+  var fired=false;
+  function hero(){ if(fired) return; fired=true; root.classList.add('ready'); $$('[data-now]').forEach(function(el){ el.classList.add('in'); }); }
+  if(d.fonts && d.fonts.ready){ d.fonts.ready.then(function(){ requestAnimationFrame(hero); }); }
+  setTimeout(hero,1200);
+
+  /* floating WhatsApp after the hero */
+  var fab=d.querySelector('.fab'), heroEl=d.querySelector('[data-hero]');
+  if(fab && heroEl){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ fab.classList.toggle('show', !e.isIntersecting); }); },{threshold:0,rootMargin:'-35% 0px 0px 0px'}).observe(heroEl);
+  }
+
+  /* parallax + pinned horizontal strips, one rAF per scroll */
+  var par=$$('[data-par]'), hs=$$('[data-hs]'), prog=$$('[data-progress]'), ticking=false, wide=false;
+  /* words that light up as the paragraph is read */
+  var lit=$$('[data-lit]').map(function(el){ (function wrap(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){ var f=d.createDocumentFragment(); n.textContent.split(/(\s+)/).forEach(function(t){ if(!t) return;
+          if(/^\s+$/.test(t)){ f.appendChild(d.createTextNode(' ')); return; } var s=d.createElement('span'); s.className='lw'; s.textContent=t; f.appendChild(s); });
+          n.parentNode.replaceChild(f,n);
+        } else if(n.nodeType===1) wrap(n); });
+    })(el); el.classList.add('is-lit'); return {el:el,w:$$('.lw',el),k:-1}; });
+  function layout(){
+    wide=innerWidth>=900;
+    hs.forEach(function(s){ var tr=s.querySelector('.hs-track');
+      if(wide){ s.style.height=(tr.scrollWidth-innerWidth+innerHeight)+'px'; } else { s.style.height=''; tr.style.transform=''; } });
+    tick();
+  }
+  function tick(){
+    ticking=false; var vh=innerHeight;
+    par.forEach(function(el){ var r=el.parentElement.getBoundingClientRect(); if(r.bottom<-50||r.top>vh+50) return;
+      var p=(r.top+r.height/2-vh/2)/vh; el.style.transform='translate3d(0,'+(p*parseFloat(el.getAttribute('data-par'))*-100).toFixed(1)+'px,0)'; });
+    if(wide) hs.forEach(function(s){ var r=s.getBoundingClientRect(), tr=s.querySelector('.hs-track'), max=tr.scrollWidth-innerWidth;
+      var p=Math.min(1,Math.max(0,-r.top/(s.offsetHeight-vh))); tr.style.transform='translate3d('+(-p*max).toFixed(1)+'px,0,0)'; });
+    lit.forEach(function(o){ var r=o.el.getBoundingClientRect(); if(r.bottom<0||r.top>vh) return;
+      var p=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35))), k=Math.round(p*o.w.length);
+      if(k!==o.k){ o.w.forEach(function(w,j){ w.classList.toggle('on',j<k); }); o.k=k; } });
+    prog.forEach(function(el){ var h=d.documentElement.scrollHeight-vh; el.style.transform='scaleX('+(h>0?scrollY/h:0).toFixed(4)+')'; });
+  }
+  addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(tick); } },{passive:true});
+  addEventListener('resize',layout);
+  addEventListener('load',layout);
+  layout();
+
+  /* magnetic buttons (mouse only) */
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+    $$('[data-mag]').forEach(function(b){
+      b.addEventListener('pointermove',function(e){ var r=b.getBoundingClientRect();
+        b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.3).toFixed(1)+'px)'; });
+      b.addEventListener('pointerleave',function(){ b.style.transform=''; });
+    });
+  }
+})();
+
+</script>
+<script>
+(function(){
+  var d=document;
+  /* usual hours, Puebla time (works without motion too) */
+  try{
+    var h=+new Intl.DateTimeFormat('en-US',{hour:'numeric',hourCycle:'h23',timeZone:'America/Mexico_City'}).format(new Date());
+    var el=d.getElementById('now'), open=h>=10&&h<22;
+    el.classList.toggle('open',open);
+    el.querySelector('span').textContent=open?'Normalmente abierto a esta hora · cierra a las 10 p.m.':'Normalmente cerrado a esta hora · abre a las 10 a.m.';
+  }catch(e){}
+  if(!d.documentElement.classList.contains('js')) return;
+  /* rotating word */
+  var words=[].slice.call(d.querySelectorAll('.slot span')), k=0;
+  setInterval(function(){ var a=words[k]; k=(k+1)%words.length; var b=words[k];
+    a.classList.remove('on'); a.classList.add('out'); b.classList.remove('out'); b.classList.add('on');
+    setTimeout(function(){ a.classList.remove('out'); },850); },2200);
+  /* desserts: the sticky photo follows the item in the middle of the screen */
+  var items=[].slice.call(d.querySelectorAll('.treats li')), pics=[].slice.call(d.querySelectorAll('.frame img'));
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; var i=+e.target.getAttribute('data-i');
+    items.forEach(function(x){ x.classList.toggle('on',x===e.target); }); pics.forEach(function(p,j){ p.classList.toggle('on',j===i); }); }); },{rootMargin:'-45% 0px -45% 0px'});
+  items.forEach(function(x){ io.observe(x); }); if(items[0]) items[0].classList.add('on');
+  /* drink preview that follows the cursor */
+  var peek=d.querySelector('.peek'); if(!peek || !matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  var imgs=[].slice.call(peek.querySelectorAll('img')), x=0,y=0,tx=0,ty=0,raf=0;
+  function loop(){ x+=(tx-x)*.16; y+=(ty-y)*.16; peek.style.transform='translate3d('+(x-150)+'px,'+(y-190)+'px,0) rotate('+((tx-x)*.04).toFixed(2)+'deg)'; raf=Math.abs(tx-x)+Math.abs(ty-y)>.5?requestAnimationFrame(loop):0; }
+  d.querySelectorAll('.drink').forEach(function(r){
+    r.addEventListener('pointerenter',function(e){ var i=+r.getAttribute('data-img'); imgs.forEach(function(m,j){ m.classList.toggle('on',j===i); }); if(!peek.style.opacity){ x=tx=e.clientX; y=ty=e.clientY; } peek.style.opacity=1; });
+    r.addEventListener('pointerleave',function(){ peek.style.opacity=''; });
+    r.addEventListener('pointermove',function(e){ tx=e.clientX; ty=e.clientY; if(!raf) raf=requestAnimationFrame(loop); });
+  });
+})();
+</script>
 </body>
 </html>

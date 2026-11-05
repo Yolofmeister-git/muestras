@@ -2,202 +2,456 @@
 <html lang="es-MX">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>CERFI Puebla · Fisioterapia y Rehabilitación en Loma Bella</title>
+<title>CERFI Puebla · Fisioterapia y Rehabilitación</title>
 <meta name="description" content="CERFI Puebla, Fisioterapia y Rehabilitación: consulta diagnóstica, rehabilitación de lesiones y rutinas de ejercicios de movilidad en Arboledas de Loma Bella, Puebla. Agenda por WhatsApp.">
 <meta property="og:title" content="CERFI Puebla · Fisioterapia y Rehabilitación">
 <meta property="og:description" content="Consulta diagnóstica, rehabilitación de lesiones y rutinas de movilidad en Arboledas de Loma Bella, Puebla. 5.0 en Google Maps.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1620371350502-999e9a7d80a4?w=1200&q=80&auto=format&fit=crop">
+<meta property="og:image" content="https://images.pexels.com/photos/20860622/pexels-photo-20860622.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta name="theme-color" content="#1b2fd6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<script>
+  (function(){
+    var d=document.documentElement;
+    if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      d.classList.add('js');
+      setTimeout(function(){ if(!window.__cerfiReady) d.classList.remove('js'); },2500);
+    }
+  })();
+</script>
 <style>
 :root{
-  --night:#0e1512;
-  --night-2:#18211d;
-  --signal:#ff5b1f;
-  --chalk:#f4f3ee;
-  --stone:#9aa59f;
+  --cobalt:#1b2fd6;
+  --cobalt-deep:#0f1a86;
+  --ink:#0e1024;
+  --bone:#f2f0ea;
+  --paper:#ffffff;
+  --volt:#d9ff3f;
+  --grey:#5d6078;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
-body{font-family:"Archivo",system-ui,sans-serif;font-stretch:100%;background:var(--chalk);color:var(--night);font-size:17px;line-height:1.55;padding-top:34px}
+body{font-family:"Archivo",system-ui,sans-serif;font-stretch:100%;background:var(--bone);color:var(--ink);font-size:17px;line-height:1.55;overflow-x:hidden}
 a{color:inherit}
-.strip{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--signal);color:var(--night);font-size:12px;font-weight:600;text-align:center;padding:8px 12px;line-height:1.4}
-.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
-.wide{font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
-.label{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+img{display:block;max-width:100%}
+.x{font-family:"Archivo",sans-serif;font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.88}
+.wrap{max-width:1300px;margin:0 auto;padding:0 20px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;font-stretch:115%;letter-spacing:.14em;text-transform:uppercase}
+.tag::before{content:"";width:8px;height:8px;background:currentColor}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;font-weight:800;font-size:16px;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;font-stretch:110%;transition:background .15s ease, transform .15s ease}
-.btn:active{transform:scale(.98)}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-main{background:var(--signal);color:var(--night)}
-.btn-main:hover{background:#ff7a47}
-.btn-line{border:2px solid currentColor}
-.ctas{display:flex;flex-wrap:wrap;gap:12px}
+/* strip */
+.strip{position:fixed;inset:0 0 auto 0;z-index:70;min-height:32px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px 16px;
+  background:var(--ink);color:#c9cbe0;font-size:11.5px;line-height:1.35;letter-spacing:.03em}
+.strip span{text-wrap:balance}
+.strip b{color:var(--volt);font-weight:700}
+
+/* nav */
+.nav{position:absolute;z-index:20;top:44px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;color:var(--paper)}
+.brand{text-decoration:none;line-height:1}
+.brand b{display:block;font-stretch:125%;font-weight:900;font-size:22px;letter-spacing:-.01em}
+.brand small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.85;margin-top:4px}
+.nav .pill{font-weight:700;font-size:14px;text-decoration:none;padding:10px 16px;background:var(--volt);color:var(--ink);border-radius:4px}
 
 /* hero */
-.hero{position:relative;min-height:calc(100svh - 34px);color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(14,21,18,.55) 0%, rgba(14,21,18,.1) 22%, rgba(14,21,18,.82) 52%, rgba(14,21,18,.92) 78%, rgba(14,21,18,.96) 100%)}
-.hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:96px;width:100%}
-.hero .label{color:var(--signal);text-shadow:0 1px 10px rgba(0,0,0,.85)}
-.hero h1{font-size:clamp(40px,11.4vw,150px);margin:14px 0 18px}
-.hero h1 span{display:block;color:var(--signal)}
-.hero .lead{font-size:clamp(18px,2vw,22px);max-width:34ch;color:#e4e8e5;margin-bottom:28px}
-.hero .btn-line{color:#fff}
-.hero .brand{text-shadow:0 1px 12px rgba(0,0,0,.6);position:absolute;top:22px;left:22px;right:22px;z-index:1;display:flex;justify-content:space-between;align-items:baseline;font-weight:800;font-stretch:125%;letter-spacing:.02em}
-.hero .brand small{font-stretch:100%;font-weight:500;font-size:13px;color:#d8ddd9;letter-spacing:.04em}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--cobalt);color:var(--paper)}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply;animation:kb 22s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1.05)}to{transform:scale(1.2) translate3d(2%,-1%,0)}}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,26,134,.55),rgba(15,26,134,0) 24%,rgba(15,26,134,.55) 45%,rgba(15,26,134,.94) 80%)}
+.hero .content{position:relative;z-index:2;width:100%;max-width:1300px;margin:0 auto;padding:0 20px 34px}
+.hero h1{font-size:clamp(46px,13.2vw,230px);margin:16px 0 18px}
+.hero h1 .l2{color:var(--volt)}
+.line{display:block;overflow:hidden;padding:.04em 0 .02em}
+.line > span{display:inline-block;will-change:transform}
+.ch{display:inline-block}
+.wd{display:inline-block;white-space:nowrap}
+.hero .lead{max-width:36ch;font-size:clamp(17px,1.7vw,21px);color:#e3e6ff}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:4px;font-weight:800;font-stretch:110%;font-size:16px;letter-spacing:.01em;text-decoration:none;
+  transition:transform .55s var(--spring),background .25s,color .25s,box-shadow .25s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn .arr{display:inline-block;transition:transform .45s var(--spring)}
+.btn:hover .arr{transform:translateX(5px)}
+.btn-volt{background:var(--volt);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-volt:hover{box-shadow:7px 7px 0 var(--ink)}
+.btn-white{border:2px solid var(--paper);color:var(--paper)}
+.btn-white:hover{background:var(--paper);color:var(--cobalt)}
+.btn-ink{background:var(--ink);color:var(--paper);box-shadow:4px 4px 0 var(--cobalt)}
+.btn-ink:hover{box-shadow:7px 7px 0 var(--cobalt)}
+.btn-blue{background:var(--cobalt);color:var(--paper);box-shadow:4px 4px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px)!important;box-shadow:1px 1px 0 var(--ink)}
+.badge{position:absolute;z-index:3;right:20px;top:118px;width:96px;height:96px;border-radius:50%;background:var(--volt);color:var(--ink);display:grid;place-items:center;text-align:center;line-height:1}
+.badge b{display:block;font-stretch:125%;font-weight:900;font-size:30px}
+.badge small{display:block;font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
 
-/* rating strip */
-.ticker{background:var(--night);color:#fff;border-top:1px solid rgba(255,255,255,.12)}
-.ticker .wrap{display:flex;align-items:center;gap:18px;padding-top:22px;padding-bottom:22px}
-.ticker b{font-stretch:125%;font-weight:900;font-size:44px;line-height:1;color:var(--signal)}
-.ticker p{font-size:15px;color:#cfd6d2;line-height:1.35}
+/* marquee */
+.marquee{background:var(--volt);color:var(--ink);overflow:hidden;border-block:2px solid var(--ink)}
+.marquee .track{display:flex;width:max-content}
+.marquee .set{display:flex;align-items:center;flex:none}
+.marquee span{font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(30px,5.5vw,64px);letter-spacing:-.02em;padding:16px 22px;white-space:nowrap;line-height:1}
+.marquee svg{width:38px;height:38px;flex:none}
 
-/* steps */
-section{padding:84px 0}
-.h2{font-size:clamp(40px,10vw,104px);margin:14px 0 40px}
-.steps{list-style:none;counter-reset:s}
-.steps li{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;padding:28px 0;border-top:2px solid var(--night)}
-.steps li:last-child{border-bottom:2px solid var(--night)}
-.steps .n{font-stretch:125%;font-weight:900;font-size:clamp(44px,12vw,120px);line-height:.85;color:var(--signal);grid-row:span 2}
-.steps h3{font-stretch:110%;font-weight:800;font-size:clamp(20px,5.2vw,34px);overflow-wrap:anywhere;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
-.steps p{color:#3e4843;max-width:46ch}
+/* intro statement */
+.intro{padding:100px 0 80px}
+.intro p.big{font-stretch:112%;font-weight:800;font-size:clamp(30px,5.4vw,70px);line-height:1.04;letter-spacing:-.025em;max-width:20ch}
+.intro p.big mark{background:none;color:var(--cobalt);position:relative;white-space:nowrap}
+.intro p.big mark::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.14em;background:var(--volt);z-index:-1;transform-origin:0 50%;transition:transform 1s var(--ease) .5s}
+.js .intro p.big mark::after{transform:scaleX(0)}
+.js .intro p.big.in mark::after{transform:scaleX(1)}
+.intro p.big mark{z-index:0}
 
-/* split photo */
-.split{display:grid;background:var(--night);color:#fff;padding:0}
-.split .ph{min-height:360px;position:relative}
-.split .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.split .tx{padding:64px 22px}
-.split .label{color:var(--signal)}
-.split h2{font-size:clamp(36px,8.4vw,84px);margin:16px 0 22px}
-.split p{color:#cfd6d2;max-width:42ch;font-size:18px}
-.split .btn{margin-top:30px}
+/* steps: stacking cards */
+.steps{padding:0 0 60px}
+.steps .head{padding:0 20px 36px;max-width:1300px;margin:0 auto}
+.steps .head h2{font-size:clamp(60px,15vw,200px);color:var(--cobalt)}
+.card{position:sticky;top:60px;margin:0 12px 24px;min-height:calc(100svh - 90px);border-radius:14px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;background:var(--paper);box-shadow:0 -20px 50px -30px rgba(14,16,36,.35);transform-origin:50% 0}
+.card:nth-child(2){background:var(--cobalt);color:var(--paper)}
+.card:nth-child(3){background:var(--ink);color:var(--paper)}
+.card .txt{padding:26px 22px 22px;position:relative}
+.card .num{font-stretch:125%;font-weight:900;font-size:clamp(76px,20vw,190px);line-height:.8;letter-spacing:-.04em;color:var(--volt);-webkit-text-stroke:2px var(--ink)}
+.card:nth-child(2) .num,.card:nth-child(3) .num{-webkit-text-stroke:0}
+.card h3{font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(24px,6.6vw,74px);line-height:.92;letter-spacing:-.02em;margin-top:18px;overflow-wrap:anywhere}
+.card p{margin-top:14px;max-width:34ch;font-size:17px;opacity:.88}
+.card .ph{position:relative;overflow:hidden;min-height:240px}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* proof */
+.proof{background:var(--cobalt);color:var(--paper);padding:100px 0;position:relative;overflow:hidden}
+.proof-grid{display:grid;gap:50px;align-items:center}
+.ringwrap{position:relative;width:min(78vw,440px);aspect-ratio:1}
+.ringwrap svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.ringwrap .val{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ringwrap .val b{display:block;font-stretch:125%;font-weight:900;font-size:clamp(90px,26vw,170px);line-height:.85;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.ringwrap .val small{display:block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--volt);margin-top:10px}
+.proof h2{font-size:clamp(40px,8vw,96px)}
+.proof ul{list-style:none;margin-top:30px;border-top:2px solid rgba(255,255,255,.3)}
+.proof li{padding:16px 0;border-bottom:2px solid rgba(255,255,255,.3);font-stretch:110%;font-weight:700;font-size:clamp(20px,2.4vw,28px);display:flex;gap:14px;align-items:baseline}
+.proof li::before{content:"";flex:none;width:12px;height:12px;background:var(--volt);transform:translateY(-2px)}
+.quote{margin-top:34px;padding:22px 24px;background:var(--volt);color:var(--ink);border-radius:6px;display:inline-block;box-shadow:6px 6px 0 var(--ink)}
+.quote q{font-stretch:120%;font-weight:900;font-size:clamp(24px,3vw,36px);letter-spacing:-.02em;line-height:1.05;quotes:"«" "»"}
+.quote small{display:block;margin-top:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em}
+
+/* hurt band */
+.hurt{position:relative;min-height:88svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:var(--paper)}
+.hurt .bg{position:absolute;inset:-12% 0}
+.hurt .bg img{width:100%;height:100%;object-fit:cover;opacity:.75}
+.hurt::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,16,36,.1) 20%,rgba(14,16,36,.92) 80%)}
+.hurt .wrap{position:relative;z-index:2;padding-top:80px;padding-bottom:80px;width:100%}
+.hurt h2{font-size:clamp(52px,13vw,170px)}
+.hurt h2 span{color:var(--volt)}
+.hurt p{max-width:36ch;margin-top:20px;font-size:19px;color:#dfe1f0}
 
 /* visit */
-.visit-grid{display:grid;gap:50px}
-.hours b{display:block;font-stretch:125%;font-weight:900;font-size:clamp(56px,14vw,124px);line-height:.9;margin-top:16px}
-.hours b span{color:var(--signal)}
-.hours p{color:#3e4843;margin-top:14px;max-width:36ch}
-.addr{font-size:22px;font-weight:600;max-width:24ch;margin:16px 0 26px;line-height:1.35}
-.visit .btn-line{color:var(--night)}
+.visit{padding:100px 0 110px}
+.visit-grid{display:grid;gap:56px}
+.clock{font-stretch:125%;font-weight:900;font-size:clamp(60px,17vw,190px);line-height:.85;letter-spacing:-.04em;margin-top:18px;white-space:nowrap;color:var(--cobalt)}
+.clock span{color:var(--ink);font-size:.35em;vertical-align:.9em;margin:0 .12em;font-stretch:100%}
+.hours p{margin-top:18px;max-width:38ch;color:var(--grey)}
+.addr{font-stretch:110%;font-weight:700;font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.015em;margin:16px 0 26px;max-width:20ch}
+.ulink{position:relative;display:inline-block;font-weight:700;text-decoration:none;margin-top:22px;font-size:17px}
+.ulink::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:3px;background:var(--volt);transform:scaleX(1);transform-origin:100% 50%;transition:transform .5s var(--ease)}
+.ulink:hover::after{transform:scaleX(0)}
 
-footer{background:var(--night);color:var(--stone);padding:46px 0 112px;font-size:14px}
-footer .wide{font-size:28px;color:#fff;margin-bottom:10px;line-height:1}
-footer a{color:#fff}
-footer .row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:12px}
+footer{background:var(--ink);color:#a7aac3;padding:60px 0 120px;font-size:14px;overflow:hidden}
+footer .x{font-size:clamp(70px,22vw,300px);color:var(--paper);line-height:.8;white-space:nowrap}
+footer .x span{color:var(--volt)}
+footer .row{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:22px}
+footer a{color:var(--paper)}
+footer .credit{margin-top:24px;font-size:12px;opacity:.75;max-width:72ch}
 
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex}
-.dock .btn-main{flex:1;min-height:62px}
-.dock .call{width:72px;min-height:62px;padding:0;background:var(--night);color:#fff;border-left:1px solid rgba(255,255,255,.15)}
+/* floating WhatsApp */
+.fab{position:fixed;z-index:65;right:14px;bottom:14px;display:flex;align-items:center;gap:10px;height:58px;padding:0 20px 0 16px;border-radius:4px;background:var(--volt);color:var(--ink);font-weight:800;font-stretch:110%;text-decoration:none;box-shadow:4px 4px 0 var(--ink);
+  transform:translateX(130%) rotate(-8deg);opacity:0;pointer-events:none;transition:transform .9s var(--spring),opacity .3s}
+.fab.on{transform:none;opacity:1;pointer-events:auto}
+.fab svg{width:24px;height:24px}
+html:not(.js) .fab{transform:none;opacity:1;pointer-events:auto}
+
+/* motion states */
+.js .rv{opacity:0;transform:translate3d(0,40px,0);transition:opacity .8s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--d,0) * 90ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .rvl > span{transform:translate3d(0,105%,0);transition:transform 1s var(--ease);transition-delay:calc(var(--d,0) * 100ms)}
+.js .rvl.in > span{transform:none}
+.js .hero .ch{transform:translate3d(0,110%,0);transition:transform .9s var(--ease);transition-delay:calc(var(--c) * 35ms + 150ms)}
+.js.loaded .hero .ch{transform:none}
+.js .hero .fade{opacity:0;transform:translate3d(0,20px,0);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--i) * 100ms + 550ms)}
+.js.loaded .hero .fade{opacity:1;transform:none}
+.js .badge{transform:scale(0) rotate(-120deg);transition:transform 1.1s var(--spring) 1s}
+.js.loaded .badge{transform:none}
+.js .card .ph img{clip-path:inset(0 0 0 100%);transition:clip-path 1.2s var(--ease) .15s}
+.js .card.in .ph img{clip-path:inset(0 0 0 0)}
 
 @media (min-width:900px){
   body{font-size:18px}
-  .wrap{padding:0 56px}
-  .hero .brand{left:max(56px, calc((100vw - 1240px) / 2 + 56px));right:max(56px, calc((100vw - 1240px) / 2 + 56px));top:34px}
-  .hero .wrap{padding-bottom:72px}
-  .hero::after{background:linear-gradient(180deg, rgba(14,21,18,.55) 0%, rgba(14,21,18,0) 18%),linear-gradient(90deg, rgba(14,21,18,.92) 0%, rgba(14,21,18,.6) 45%, rgba(14,21,18,.05) 80%)}
-  .hero .wrap{padding-bottom:72px}
-  .hero img{object-position:center 35%}
-  section{padding:130px 0}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0 36px}
-  .steps li{grid-template-columns:1fr;border-bottom:0 !important;padding:30px 0 0}
-  .steps .n{grid-row:auto;margin-bottom:18px}
-  .split{grid-template-columns:1fr 1fr}
-  .split .ph{min-height:620px}
-  .split .tx{padding:110px 56px;display:flex;flex-direction:column;justify-content:center}
-  .visit-grid{grid-template-columns:1fr 1fr}
-  .dock{display:none}
-  footer{padding-bottom:50px}
+  .wrap,.hero .content,.steps .head{padding-left:52px;padding-right:52px}
+  .nav{top:32px;padding:22px 52px}
+  .hero h1{font-size:min(12vw,17.5vh)}
+  .hero .content{padding-bottom:60px}
+  .badge{right:52px;top:auto;bottom:70px;width:150px;height:150px}
+  .badge b{font-size:48px}
+  .badge small{font-size:11px}
+  .intro{padding:160px 0 120px}
+  .card{margin:0 40px 30px;grid-template-rows:none;grid-template-columns:1fr 1fr;height:calc(100vh - 110px);min-height:520px;top:70px}
+  .card h3{font-size:clamp(34px,4.2vw,64px)}
+  .card .num{font-size:clamp(90px,12vw,170px)}
+  .card .txt{padding:46px 48px;display:flex;flex-direction:column;justify-content:space-between}
+  .card .ph{min-height:0}
+  .proof{padding:150px 0}
+  .proof-grid{grid-template-columns:auto 1fr;gap:90px}
+  .visit{padding:150px 0}
+  .visit-grid{grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+  .fab{right:28px;bottom:28px}
+  footer{padding-bottom:70px}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
 }
 </style>
 </head>
 <body>
-<div class="strip">Propuesta de página para CERFI Puebla Fisioterapia y Rehabilitación · aún no es su sitio oficial</div>
+<div class="strip" role="note"><span>Propuesta de página para <b>CERFI Puebla Fisioterapia y Rehabilitación</b> · aún no es su sitio oficial</span></div>
 
-<header class="hero">
-  <img src="https://images.unsplash.com/photo-1620371350502-999e9a7d80a4?w=1600&q=80&auto=format&fit=crop" alt="Persona entrenando con un balón medicinal al sol" width="1600" height="2000">
-  <div class="brand">CERFI PUEBLA <small>Fisioterapia y Rehabilitación</small></div>
-  <div class="wrap">
-    <span class="label">Arboledas de Loma Bella · Puebla</span>
-    <h1 class="wide">Vuelve a <span>moverte.</span></h1>
-    <p class="lead">Fisioterapia y rehabilitación de lesiones, empezando por entender qué te pasa. Agenda tu consulta por WhatsApp.</p>
-    <div class="ctas">
-      <a class="btn btn-main" href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">
+<header class="hero" id="top">
+  <div class="bg" data-parallax>
+    <picture>
+      <source media="(max-width:700px)" srcset="https://images.pexels.com/photos/20860625/pexels-photo-20860625.jpeg?auto=compress&cs=tinysrgb&w=900">
+      <img src="https://images.pexels.com/photos/20860622/pexels-photo-20860622.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Fisioterapeuta guiando un ejercicio de estiramiento" width="1920" height="1280" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="shade"></div>
+  <nav class="nav">
+    <a class="brand" href="#top"><b>CERFI</b><small>Puebla · Fisioterapia</small></a>
+    <a class="pill" href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Agendar</a>
+  </nav>
+  <div class="badge" aria-label="5.0 en Google Maps"><div><b>5.0</b><small>Google Maps</small></div></div>
+  <div class="content">
+    <span class="tag fade" style="--i:0">Arboledas de Loma Bella · Puebla</span>
+    <h1 class="x" aria-label="Vuelve a moverte.">
+      <span class="line" aria-hidden="true"><span data-split data-kx="-1">Vuelve a</span></span>
+      <span class="line l2" aria-hidden="true"><span data-split data-kx="1">moverte.</span></span>
+    </h1>
+    <p class="lead fade" style="--i:1">Fisioterapia y rehabilitación de lesiones, empezando por entender qué te pasa. Agenda tu consulta por WhatsApp.</p>
+    <div class="ctas fade" style="--i:2">
+      <a class="btn btn-volt" data-mag href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
-        Agenda tu cita por WhatsApp</a>
-      <a class="btn btn-line" href="tel:+522216330353">Llamar</a>
+        Agenda por WhatsApp</a>
+      <a class="btn btn-white" data-mag href="tel:+522216330353">Llamar <span class="arr">→</span></a>
     </div>
   </div>
 </header>
 
-<div class="ticker">
-  <div class="wrap">
-    <b>5.0</b>
-    <p>en Google Maps con 15 opiniones. Destacan el trato amable y profesional, y que te explican todo a detalle.</p>
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="mq">
+    <div class="set"><span>Consulta diagnóstica</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg><span>Rehabilitación de lesiones</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg><span>Rutinas de movilidad</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg></div>
+    <div class="set"><span>Consulta diagnóstica</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg><span>Rehabilitación de lesiones</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg><span>Rutinas de movilidad</span><svg viewBox="0 0 40 40"><path d="M6 20h28M24 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="5"/></svg></div>
   </div>
 </div>
 
-<section id="servicios">
+<section class="intro">
   <div class="wrap">
-    <span class="label" style="color:var(--signal)">Cómo trabajamos</span>
-    <h2 class="wide h2">Paso<br>a paso</h2>
-    <ol class="steps">
-      <li><span class="n">01</span><h3>Consulta diagnóstica</h3><p>Antes de la terapia, una consulta para revisar tu caso y explicarte qué está pasando.</p></li>
-      <li><span class="n">02</span><h3>Rehabilitación de lesiones</h3><p>Terapia para recuperarte de una lesión, por ejemplo de tobillo.</p></li>
-      <li><span class="n">03</span><h3>Rutinas de movilidad</h3><p>Ejercicios de movilidad para que sigas avanzando también en casa.</p></li>
-    </ol>
+    <span class="tag rv" style="color:var(--cobalt)">Cómo trabajamos</span>
+    <p class="big rv" style="margin-top:22px">Primero entendemos <mark>qué te pasa.</mark> Después, terapia para tu lesión y ejercicios para seguir avanzando en casa.</p>
   </div>
 </section>
 
-<section class="split">
-  <div class="ph"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80&auto=format&fit=crop" alt="Persona haciendo ejercicios en el piso" width="1600" height="1067"></div>
-  <div class="tx">
-    <span class="label">¿Te lastimaste?</span>
-    <h2 class="wide">No te quedes con el dolor.</h2>
-    <p>Escríbenos qué te pasó y desde cuándo, y agenda tu consulta diagnóstica.</p>
-    <a class="btn btn-main" href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Agenda tu cita por WhatsApp</a>
+<section class="steps" id="servicios">
+  <div class="head">
+    <h2 class="x">
+      <span class="line rvl"><span>Paso</span></span>
+      <span class="line rvl" style="--d:1"><span>a paso</span></span>
+    </h2>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="txt">
+        <span class="num">01</span>
+        <div><h3>Consulta diagnóstica</h3><p>Antes de la terapia, una consulta para revisar tu caso y explicarte qué está pasando.</p></div>
+      </div>
+      <div class="ph"><img loading="lazy" src="https://images.pexels.com/photos/20860625/pexels-photo-20860625.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fisioterapeuta revisando la pierna de un paciente" width="1200" height="1800"></div>
+    </article>
+    <article class="card">
+      <div class="txt">
+        <span class="num">02</span>
+        <div><h3>Rehabilitación de lesiones</h3><p>Terapia para recuperarte de una lesión, por ejemplo de tobillo.</p></div>
+      </div>
+      <div class="ph"><img loading="lazy" src="https://images.pexels.com/photos/13185370/pexels-photo-13185370.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sesión de rehabilitación de tobillo con terapeuta" width="1200" height="800"></div>
+    </article>
+    <article class="card">
+      <div class="txt">
+        <span class="num">03</span>
+        <div><h3>Rutinas de movilidad</h3><p>Ejercicios de movilidad para que sigas avanzando también en casa.</p></div>
+      </div>
+      <div class="ph"><img loading="lazy" src="https://images.pexels.com/photos/30483060/pexels-photo-30483060.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ejercicio de pie con liga de resistencia" width="1200" height="2130"></div>
+    </article>
+  </div>
+</section>
+
+<section class="proof" id="opiniones">
+  <div class="wrap proof-grid">
+    <div class="ringwrap" id="ring">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="10"/>
+        <circle id="ringbar" cx="100" cy="100" r="90" fill="none" stroke="#d9ff3f" stroke-width="10" stroke-linecap="butt" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+      </svg>
+      <div class="val"><div><b data-count="5.0" data-dec="1">5.0</b><small>de 5 · Google Maps</small></div></div>
+    </div>
+    <div>
+      <span class="tag rv" style="color:var(--volt)">15 opiniones en Google Maps</span>
+      <h2 class="x" style="margin-top:16px">
+        <span class="line rvl"><span>Lo que dicen</span></span>
+        <span class="line rvl" style="--d:1"><span>sus pacientes</span></span>
+      </h2>
+      <ul>
+        <li class="rv" style="--d:1">Terapeutas profesionales y amables</li>
+        <li class="rv" style="--d:2">Te explican todo a detalle</li>
+      </ul>
+      <div class="quote rv" style="--d:3"><q>Los costos son adecuados.</q><small>Reseña en Google Maps</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="hurt">
+  <div class="bg" data-hurt><img loading="lazy" src="https://images.pexels.com/photos/7991959/pexels-photo-7991959.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Tobillo vendado antes de una sesión" width="1800" height="1153"></div>
+  <div class="wrap">
+    <span class="tag rv" style="color:var(--volt)">¿Te lastimaste?</span>
+    <h2 class="x" style="margin-top:16px">
+      <span class="line rvl"><span>No te quedes</span></span>
+      <span class="line rvl" style="--d:1"><span>con <span>el dolor.</span></span></span>
+    </h2>
+    <p class="rv">Escríbenos qué te pasó y desde cuándo, y agenda tu consulta diagnóstica.</p>
+    <div class="ctas rv" style="--d:1">
+      <a class="btn btn-volt" data-mag href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Agenda tu consulta <span class="arr">→</span></a>
+    </div>
   </div>
 </section>
 
 <section class="visit" id="visita">
   <div class="wrap visit-grid">
     <div class="hours">
-      <span class="label" style="color:var(--signal)">Horario</span>
-      <b>10:00 <span>a</span> 20:00</b>
-      <p>Horario publicado en Google Maps. Confirma tu día y hora al agendar.</p>
+      <span class="tag rv" style="color:var(--cobalt)">Horario</span>
+      <div class="clock rv">10<span>a</span>20</div>
+      <p class="rv">De 10:00 a 20:00, según el horario publicado en Google Maps. Confirma tu día y hora por WhatsApp al agendar.</p>
     </div>
     <div>
-      <span class="label" style="color:var(--signal)">Dónde estamos</span>
-      <p class="addr">C. 105 C. Ote. 11A, Arboledas de Loma Bella, 72474 Puebla, Pue.</p>
-      <div class="ctas">
-        <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&amp;query=CERFI%20PUEBLA%20Fisioterapia%20y%20Rehabilitaci%C3%B3n%2C%20C.%20105%20C.%20Ote.%2011A%2C%20Arboledas%20de%20Loma%20Bella%2C%2072474%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
-        <a class="btn btn-line" href="tel:+522216330353">221 633 0353</a>
+      <span class="tag rv" style="color:var(--cobalt)">Dónde estamos</span>
+      <p class="addr rv">C. 105 C. Ote. 11A, Arboledas de Loma Bella, 72474 Puebla, Pue.</p>
+      <div class="ctas rv">
+        <a class="btn btn-blue" data-mag href="https://www.google.com/maps/search/?api=1&amp;query=CERFI%20PUEBLA%20Fisioterapia%20y%20Rehabilitaci%C3%B3n%2C%20C.%20105%20C.%20Ote.%2011A%2C%20Arboledas%20de%20Loma%20Bella%2C%2072474%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar <span class="arr">→</span></a>
+        <a class="btn btn-ink" data-mag href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">WhatsApp</a>
       </div>
+      <a class="ulink rv" href="tel:+522216330353">Llamar al 221 633 0353</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="wide">CERFI Puebla</div>
-    <div>Fisioterapia y Rehabilitación · C. 105 C. Ote. 11A, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.</div>
+    <div class="x" data-drift>CERFI<span>.</span></div>
+    <div style="margin-top:20px">Fisioterapia y Rehabilitación · C. 105 C. Ote. 11A, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.</div>
     <div class="row">
       <a href="tel:+522216330353">221 633 0353</a>
       <a href="https://wa.me/522216330353" target="_blank" rel="noopener">WhatsApp</a>
     </div>
-    <div class="row" style="opacity:.7;font-size:12px">Fotos: Unsplash (ilustrativas)</div>
+    <p class="credit">Fotos ilustrativas de Pexels: Funkcinės Terapijos Centras, Juan Manuel Montejano Lopez, Cansu Hangül y Annushka Ahuja. No son fotos de la clínica.</p>
   </div>
 </footer>
 
-<div class="dock">
-  <a class="btn btn-main" href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Agenda por WhatsApp</a>
-  <a class="btn call" href="tel:+522216330353" aria-label="Llamar">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
-  </a>
-</div>
+<a class="fab" id="fab" href="https://wa.me/522216330353?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Agenda por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+  Agendar
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script>
+(function(){
+  var root=document.documentElement, motion=root.classList.contains('js');
+  var fab=document.getElementById('fab');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){ fab.classList.toggle('on',!e[0].isIntersecting); },{threshold:0.1}).observe(document.getElementById('top'));
+  } else fab.classList.add('on');
+
+  // Marquee: CSS-free loop so it can reverse with scroll direction.
+  var mq=document.getElementById('mq'), x=0, dir=-1, speed=0.6, half=0;
+  function measure(){ half=mq.firstElementChild.getBoundingClientRect().width; }
+  measure(); window.addEventListener('resize',measure);
+  var lastY=window.scrollY;
+  window.addEventListener('scroll',function(){ var y=window.scrollY; if(y!==lastY){ dir=y>lastY?-1:1; lastY=y; } },{passive:true});
+  (function loop(){
+    if(motion){ x+=dir*speed; if(x<=-half) x+=half; if(x>0) x-=half; mq.style.transform='translate3d('+x.toFixed(1)+'px,0,0)'; }
+    requestAnimationFrame(loop);
+  })();
+
+  if(!motion) return;
+
+  // Split hero lines into letters for a staggered rise.
+  var c=0;
+  document.querySelectorAll('[data-split]').forEach(function(el){
+    var t=el.textContent; el.textContent='';
+    t.split(' ').forEach(function(w,wi){
+      if(wi) el.appendChild(document.createTextNode(' '));
+      var wd=document.createElement('span'); wd.className='wd';
+      w.split('').forEach(function(ch){
+        var s=document.createElement('span'); s.className='ch'; s.style.setProperty('--c',c++); s.textContent=ch; wd.appendChild(s);
+      });
+      el.appendChild(wd);
+    });
+  });
+
+  function count(el){
+    if(el.__d) return; el.__d=1;
+    var end=parseFloat(el.getAttribute('data-count')), dec=+(el.getAttribute('data-dec')||0), t0=null;
+    el.textContent=(0).toFixed(dec);
+    function step(t){ if(!t0) t0=t; var p=Math.min(1,(t-t0)/1600), e=1-Math.pow(1-p,4); el.textContent=(end*e).toFixed(dec); if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var bar=document.getElementById('ringbar');
+  bar.style.strokeDashoffset='100'; bar.style.transition='stroke-dashoffset 1.8s cubic-bezier(.22,1,.36,1) .1s';
+
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){ if(!e.isIntersecting) return; var el=e.target; el.classList.add('in'); io.unobserve(el);
+      if(el.id==='ring'){ bar.style.strokeDashoffset='0'; el.querySelectorAll('[data-count]').forEach(count); } });
+  },{threshold:0.2,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv,.rvl,.card,#ring').forEach(function(el){ io.observe(el); });
+
+  if(window.matchMedia('(hover:hover)').matches){
+    document.querySelectorAll('[data-mag]').forEach(function(b){
+      b.addEventListener('pointermove',function(e){ var r=b.getBoundingClientRect();
+        b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.2).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.3).toFixed(1)+'px)'; });
+      b.addEventListener('pointerleave',function(){ b.style.transform=''; });
+    });
+  }
+
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ root.classList.add('loaded'); }); });
+  window.__cerfiReady=true;
+
+  window.addEventListener('load',function(){
+    if(!window.gsap||!window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    // Hero lines pull apart as you leave.
+    document.querySelectorAll('[data-kx]').forEach(function(el){
+      gsap.to(el,{xPercent:+el.getAttribute('data-kx')*18,ease:'none',scrollTrigger:{trigger:'#top',start:'top top',end:'bottom top',scrub:true}});
+    });
+    gsap.to('[data-parallax]',{yPercent:14,ease:'none',scrollTrigger:{trigger:'#top',start:'top top',end:'bottom top',scrub:true}});
+    // Stacking cards: each card shrinks and dims as the next one lands on it.
+    var cards=gsap.utils.toArray('.card');
+    cards.forEach(function(card,i){
+      if(i===cards.length-1) return;
+      gsap.to(card,{scale:.92,ease:'none',scrollTrigger:{trigger:cards[i+1],start:'top bottom',end:'top 70px',scrub:true}});
+    });
+    gsap.to('[data-hurt]',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hurt',start:'top bottom',end:'bottom top',scrub:true}});
+    gsap.fromTo('[data-drift]',{xPercent:-4},{xPercent:4,ease:'none',scrollTrigger:{trigger:'footer',start:'top bottom',end:'bottom bottom',scrub:true}});
+    // Marquee runs faster while scrolling.
+    ScrollTrigger.create({onUpdate:function(s){ speed=0.6+Math.min(6,Math.abs(s.getVelocity())/400); }});
+    setInterval(function(){ speed+= (0.6-speed)*0.2; },100);
+  });
+})();
+</script>
 </body>
 </html>
