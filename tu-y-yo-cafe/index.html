@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tú y yo café de especialidad · El Carmen, Puebla</title>
+<meta name="description" content="Café de especialidad, filtrados, postres de la casa y un menú que cambia por temporada. C. 4 Sur 2310, El Carmen, Puebla. Abierto de 10 a.m. a 10 p.m. Pet friendly.">
+<meta property="og:title" content="Tú y yo café de especialidad">
+<meta property="og:description" content="Barra de café de especialidad en El Carmen, Puebla. Galletas y postres de la casa, de 10 a.m. a 10 p.m.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1200&q=80&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#f3ebdf;
+  --leche:#faf6ef;
+  --espresso:#2b1d16;
+  --tostado:#6b4b3a;
+  --barro:#c0582f;
+  --line:rgba(43,29,22,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--crema);color:var(--espresso);line-height:1.55;padding-top:42px}
+a{color:inherit}
+.strip{position:fixed;top:0;left:0;right:0;z-index:50;height:42px;display:flex;align-items:center;justify-content:center;padding:0 18px;background:var(--espresso);color:#eadfce;font-size:12px;line-height:1.3;text-align:center}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+
+.hero{display:grid}
+.hero-copy{padding:48px 22px 40px;display:flex;flex-direction:column}
+.place{font-size:14px;font-weight:500;color:var(--tostado);display:flex;gap:10px;align-items:center}
+.place::before{content:"";width:28px;height:2px;background:var(--barro)}
+h1{font-weight:800;font-size:clamp(88px,29vw,220px);line-height:.8;letter-spacing:-.06em;margin:22px 0 10px}
+h1 span{color:var(--barro)}
+.kind{font-size:clamp(20px,5.6vw,30px);font-weight:500;letter-spacing:-.02em;color:var(--tostado)}
+.lede{font-size:19px;max-width:32ch;margin-top:26px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:background .15s ease,color .15s ease}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-main{background:var(--espresso);color:var(--leche);flex:1 1 100%}
+.btn-main:hover{background:var(--barro)}
+.btn-line{border:1.5px solid var(--espresso);flex:1 1 100%}
+.btn-line:hover{background:var(--espresso);color:var(--leche)}
+.facts{display:flex;gap:28px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
+.facts div{font-size:14px;color:var(--tostado);line-height:1.35}
+.facts b{display:block;font-size:30px;font-weight:800;color:var(--espresso);letter-spacing:-.03em;line-height:1.1}
+.hero-photo{min-height:440px;background:#8a6a55 url("https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1600&q=80&auto=format&fit=crop") center/cover no-repeat}
+
+/* menu */
+.menu{padding:80px 0 72px;background:var(--leche)}
+.head{display:grid;gap:14px}
+h2{font-weight:800;font-size:clamp(44px,12vw,96px);line-height:.92;letter-spacing:-.05em}
+h2 span{color:var(--barro)}
+.head p{font-size:18px;color:var(--tostado);max-width:40ch}
+.cols{display:grid;gap:44px;margin-top:48px}
+.col h3{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--barro);padding-bottom:12px;border-bottom:1.5px solid var(--espresso)}
+.col ul{list-style:none}
+.col li{font-size:clamp(24px,6.4vw,32px);font-weight:500;letter-spacing:-.03em;line-height:1.15;padding:14px 0;border-bottom:1px solid var(--line)}
+.perks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;font-weight:500;font-size:17px}
+.perks span{display:flex;align-items:center;gap:10px}
+.perks span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--barro)}
+
+.trio{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:4px;background:var(--leche)}
+.trio{height:120vw;max-height:560px}
+.trio div{background:#8a6a55 center/cover no-repeat}
+.trio .t3{display:none}
+
+/* visit */
+.visit{padding:80px 0;background:var(--espresso);color:var(--leche)}
+.visit h2 span{color:#e48a5f}
+.vgrid{display:grid;gap:44px;margin-top:44px}
+.k{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#e48a5f;margin-bottom:12px}
+.big{font-size:clamp(30px,8.4vw,50px);font-weight:800;letter-spacing:-.045em;line-height:1}
+.small{font-size:17px;color:#d6c8b6;margin-top:12px;max-width:36ch}
+.addr{font-size:24px;font-weight:500;line-height:1.3;letter-spacing:-.02em;max-width:22ch}
+.visit .btn-main{background:var(--leche);color:var(--espresso)}
+.visit .btn-main:hover{background:#e48a5f}
+.visit .btn-line{border-color:var(--leche);color:var(--leche)}
+.visit .btn-line:hover{background:var(--leche);color:var(--espresso)}
+.visit .actions{margin-top:22px}
+
+footer{background:#1d130e;color:#b7a693;padding:40px 0 112px;font-size:14px}
+footer .wrap{display:grid;gap:12px}
+.fname{font-size:30px;font-weight:800;letter-spacing:-.05em;color:var(--leche)}
+.fname span{color:#e48a5f}
+footer a.fb{color:var(--leche);font-weight:700;text-decoration:none;border-bottom:1.5px solid #e48a5f;padding:6px 0;justify-self:start}
+
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+.dock .btn{width:100%;box-shadow:0 12px 30px rgba(43,29,22,.35)}
+
+@media (min-width:760px){
+  body{padding-top:34px}.strip{height:34px}
+  .btn-main,.btn-line{flex:0 0 auto}
+  .cols{grid-template-columns:1fr 1fr 1fr;column-gap:48px}
+  .trio{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)}
+  .trio{height:520px}
+  .trio .t3{display:block}
+  .vgrid{grid-template-columns:1fr 1fr}
+  .dock{display:none}
+  footer{padding-bottom:40px}
+  .head{grid-template-columns:1fr auto;align-items:end}
+}
+@media (min-width:1024px){
+  .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:calc(100vh - 34px)}
+  .hero-copy{padding:72px 64px 56px max(22px,calc((100vw - 1200px)/2 + 22px));justify-content:center}
+  h1{font-size:min(220px,15vw)}
+  .menu,.visit{padding:120px 0}
+}
+</style>
+</head>
+<body>
+<div class="strip">Propuesta de página para Tú y yo café de especialidad · aún no es su sitio oficial</div>
+
+<header class="hero">
+  <div class="hero-copy">
+    <p class="place">El Carmen, Puebla</p>
+    <h1>tú <span>y</span> yo</h1>
+    <p class="kind">café de especialidad</p>
+    <p class="lede">Una barra tranquila para tomarte un buen café, con galletas y postres de la casa y una carta que cambia con la temporada.</p>
+    <div class="actions">
+      <a class="btn btn-main" href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>
+        Pedir por WhatsApp</a>
+      <a class="btn btn-line" href="tel:+522212537274">Llamar · 221 253 7274</a>
+    </div>
+    <div class="facts">
+      <div><b>4.8</b>en Google<br>483 reseñas</div>
+      <div><b>10 a 10</b>abierto<br>de 10 a.m. a 10 p.m.</div>
+    </div>
+  </div>
+  <div class="hero-photo" role="img" aria-label="Taza de café con arte latte"></div>
+</header>
+
+<section class="menu" id="carta">
+  <div class="wrap">
+    <div class="head">
+      <h2>En la <span>barra</span></h2>
+      <p>La carta cambia cada mes y con la temporada. Esto es lo que suele haber.</p>
+    </div>
+    <div class="cols">
+      <div class="col">
+        <h3>Café</h3>
+        <ul>
+          <li>Café de especialidad</li>
+          <li>Filtrados</li>
+          <li>Flat white</li>
+          <li>Capuchino</li>
+          <li>Mocha</li>
+          <li>Mocktails</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>De la casa</h3>
+        <ul>
+          <li>Galleta red velvet con queso</li>
+          <li>Galleta cuatro chocolates</li>
+          <li>Rol de canela</li>
+          <li>Cheesecake de mango</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Para comer</h3>
+        <ul>
+          <li>Sándwich de pulled pork</li>
+          <li>Chilaquiles</li>
+        </ul>
+      </div>
+    </div>
+    <div class="perks"><span>Pet friendly</span><span>Para tomar aquí</span><span>Para llevar</span></div>
+  </div>
+</section>
+
+<div class="trio" aria-hidden="true">
+  <div style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80&auto=format&fit=crop')"></div>
+  <div style="background-image:url('https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=900&q=80&auto=format&fit=crop')"></div>
+  <div class="t3" style="background-image:url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80&auto=format&fit=crop')"></div>
+</div>
+
+<section class="visit" id="visita">
+  <div class="wrap">
+    <h2>Nos vemos <span>aquí</span></h2>
+    <div class="vgrid">
+      <div>
+        <p class="k">Horario</p>
+        <p class="big">10:00 a.m. a 10:00 p.m.</p>
+        <p class="small">Entre $100 y $200 por persona. Pet friendly: tu perro también es bienvenido.</p>
+      </div>
+      <div>
+        <p class="k">Dónde estamos</p>
+        <p class="addr">C. 4 Sur 2310, El Carmen, 72530 Puebla, Pue.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=T%C3%BA%20y%20yo%20caf%C3%A9%20de%20especialidad%2C%20C.%204%20Sur%202310%2C%20El%20Carmen%2C%2072530%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-line" href="tel:+522212537274">Llamar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">tú <span>y</span> yo</p>
+    <p>Café de especialidad · C. 4 Sur 2310, El Carmen, Puebla · 221 253 7274</p>
+    <a class="fb" href="https://www.facebook.com/tuyyobarradecafe" target="_blank" rel="noopener">Facebook</a>
+    <p style="font-size:12px;color:#857563">Fotos ilustrativas: Unsplash.</p>
+  </div>
+</footer>
+
+<div class="dock"><a class="btn btn-main" href="https://wa.me/522212537274?text=Hola%2C%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a></div>
+</body>
+</html>

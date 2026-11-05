@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fonda Margarita El reino del sabor · Comida poblana en el Centro de Puebla</title>
+<meta name="description" content="Fonda poblana en el Centro Histórico: menú del día, buffet, tortillas a mano, mole de caderas y chiles en nogada de temporada. Av 5 Pte 322. Desde las 8 a.m.">
+<meta property="og:title" content="Fonda Margarita · El reino del sabor">
+<meta property="og:description" content="Comida casera poblana en el Centro Histórico de Puebla. Menú del día, buffet y tortillas hechas a mano.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1200&q=80&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rosa:#e5007d;
+  --rosa-d:#b30062;
+  --sol:#ffcd1f;
+  --verde:#00804a;
+  --ink:#141010;
+  --cal:#fff8ec;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Archivo",system-ui,sans-serif;background:var(--cal);color:var(--ink);line-height:1.55;padding-top:42px}
+a{color:inherit}
+.strip{position:fixed;top:0;left:0;right:0;z-index:50;height:42px;display:flex;align-items:center;justify-content:center;padding:0 18px;background:var(--ink);color:#efe6d6;font-size:12px;line-height:1.3;text-align:center}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+
+/* market awning, drawn in CSS */
+.awning{position:relative;z-index:3;height:58px;background:repeating-linear-gradient(90deg,var(--rosa) 0 40px,var(--cal) 40px 80px)}
+.awning::after{content:"";position:absolute;left:0;right:0;bottom:-20px;height:20px;
+  background:radial-gradient(circle at 20px 0,var(--rosa) 0 20px,transparent 20.5px) 0 0/80px 20px repeat-x,
+             radial-gradient(circle at 20px 0,var(--cal) 0 20px,transparent 20.5px) 40px 0/80px 20px repeat-x}
+.awning.green{background:repeating-linear-gradient(90deg,var(--verde) 0 40px,var(--cal) 40px 80px)}
+.awning.green::after{background:radial-gradient(circle at 20px 0,var(--verde) 0 20px,transparent 20.5px) 0 0/80px 20px repeat-x,radial-gradient(circle at 20px 0,var(--cal) 0 20px,transparent 20.5px) 40px 0/80px 20px repeat-x}
+
+/* hero */
+.hero{position:relative;background:var(--ink) url("https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1600&q=80&auto=format&fit=crop") center/cover no-repeat;padding:70px 0 40px;min-height:640px;display:flex;align-items:flex-end}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,16,.25) 0%,rgba(20,16,16,.7) 45%,rgba(20,16,16,.92) 100%)}
+.hero .wrap{position:relative;width:100%}
+.sign{display:inline-block;background:var(--sol);padding:20px 22px 22px;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--rosa);transform:rotate(-1.5deg);max-width:100%}
+.sign small{display:block;font-family:"Bungee",sans-serif;font-size:14px;letter-spacing:.08em;color:var(--verde)}
+h1{font-family:"Bungee",sans-serif;font-weight:400;font-size:clamp(38px,11.2vw,124px);line-height:.92;color:var(--rosa);text-shadow:3px 3px 0 var(--ink);margin-top:6px;letter-spacing:-.01em}
+.script{font-family:"Lobster",cursive;font-size:clamp(30px,8.5vw,56px);line-height:1;color:var(--ink);margin-top:8px}
+.lede{color:#fff;font-size:19px;text-shadow:0 1px 12px rgba(0,0,0,.5);max-width:32ch;margin-top:34px;font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;font-weight:800;font-size:17px;text-decoration:none;border:3px solid var(--ink);transition:transform .12s ease,box-shadow .12s ease}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-main{background:var(--rosa);color:#fff;box-shadow:5px 5px 0 var(--ink);flex:1 1 100%}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn-alt{background:var(--sol);color:var(--ink);box-shadow:5px 5px 0 var(--ink);flex:1 1 100%}
+.btn-alt:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.hero .btn{border-color:var(--ink)}
+.rate{margin-top:26px;color:#f1e7d6;font-size:15px;display:flex;align-items:center;gap:12px}
+.rate b{font-family:"Bungee",sans-serif;font-weight:400;font-size:34px;color:var(--sol);line-height:1}
+
+/* board: hoy hay */
+.board{background:var(--verde);color:#fff;padding:84px 0 72px;position:relative}
+.board h2{font-family:"Bungee",sans-serif;font-weight:400;font-size:clamp(44px,13vw,104px);line-height:.95;color:var(--sol);text-shadow:4px 4px 0 var(--ink)}
+.board .note{margin-top:14px;font-size:18px;max-width:40ch;color:#e3f3ea}
+.list{list-style:none;margin-top:40px;display:grid;column-gap:56px}
+.list li{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:2px dashed rgba(255,255,255,.4)}
+.list li span{font-family:"Bungee",sans-serif;font-size:clamp(22px,6vw,32px);line-height:1.1}
+.list li em{font-family:"Lobster",cursive;font-style:normal;font-size:20px;color:var(--sol);white-space:nowrap}
+.modes{margin-top:36px;font-weight:700;font-size:16px;display:flex;flex-wrap:wrap;gap:10px}
+.modes span{background:var(--cal);color:var(--ink);padding:9px 14px;border:3px solid var(--ink)}
+
+.photos{display:grid;grid-template-columns:1fr 1fr;border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+.photos div{aspect-ratio:1/1;background:#553 center/cover no-repeat}
+.photos div+div{border-left:4px solid var(--ink)}
+
+/* places */
+.places{padding:84px 0 80px}
+.places h2{font-family:"Bungee",sans-serif;font-weight:400;font-size:clamp(40px,11.5vw,96px);line-height:.95;color:var(--rosa);text-shadow:3px 3px 0 var(--ink)}
+.hours{margin-top:26px;font-family:"Bungee",sans-serif;font-size:clamp(26px,7vw,44px);line-height:1.1}
+.hours i{font-style:normal;color:var(--verde)}
+.hours-note{font-size:17px;color:#544a40;max-width:42ch;margin-top:10px}
+.sites{display:grid;gap:0;margin-top:44px;border-top:4px solid var(--ink)}
+.site{padding:30px 0;border-bottom:4px solid var(--ink)}
+.site .tag{font-family:"Bungee",sans-serif;font-size:14px;letter-spacing:.06em;color:var(--rosa)}
+.site h3{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(28px,7.5vw,40px);line-height:1.05;margin-top:8px;letter-spacing:-.02em}
+.site p{font-size:17px;color:#3c342d;margin-top:8px}
+.site .actions{margin-top:18px}
+.site .btn{min-height:54px;font-size:16px}
+
+footer{background:var(--ink);color:#c9bfae;padding:40px 0 112px;font-size:14px}
+footer .wrap{display:grid;gap:10px}
+.fname{font-family:"Bungee",sans-serif;font-size:24px;color:var(--sol)}
+
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+.dock .btn{width:100%}
+
+@media (min-width:760px){
+  body{padding-top:34px}.strip{height:34px}
+  .btn-main,.btn-alt{flex:0 0 auto}
+  .list{grid-template-columns:1fr 1fr}
+  .photos{grid-template-columns:1fr 1fr 1fr}
+  .photos div{aspect-ratio:4/3}
+  .sites{grid-template-columns:1fr 1fr;column-gap:56px;border-top:0}
+  .site{border-top:4px solid var(--ink)}
+  .dock{display:none}
+  footer{padding-bottom:40px}
+}
+@media (min-width:1024px){
+  .hero{min-height:calc(100vh - 34px - 58px);padding:90px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:64px;align-items:end}
+  .hero-side .lede{margin-top:0}
+  .board,.places{padding:120px 0 110px}
+}
+@media (max-width:759px){.photos .p3{display:none}}
+</style>
+</head>
+<body>
+<div class="strip">Propuesta de página para Fonda Margarita El reino del sabor · aún no es su sitio oficial</div>
+
+<div class="awning" aria-hidden="true"></div>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="sign">
+      <small>Fonda poblana · Centro</small>
+      <h1>Fonda<br>Margarita</h1>
+      <p class="script">El reino del sabor</p>
+    </div>
+    <div class="hero-side">
+      <p class="lede">Comida casera poblana en el Centro Histórico: menú del día, buffet y tortillas hechas a mano, desde las 8 de la mañana.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="https://wa.me/522222320806?text=Hola%2C%20quiero%20hacer%20un%20pedido">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>
+          Pedir por WhatsApp</a>
+        <a class="btn btn-alt" href="tel:+522222320806">Llamar · 222 232 0806</a>
+      </div>
+      <div class="rate"><b>4.4</b><span>en Google, con casi 1,200 reseñas</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="board" id="hoy">
+  <div class="wrap">
+    <h2>Hoy hay</h2>
+    <p class="note">El menú cambia todos los días. Pregunta por WhatsApp qué se cocinó hoy.</p>
+    <ul class="list">
+      <li><span>Menú del día</span><em>cambia diario</em></li>
+      <li><span>Buffet</span></li>
+      <li><span>Chilaquiles</span></li>
+      <li><span>Mole de caderas</span></li>
+      <li><span>Chiles en nogada</span><em>de temporada</em></li>
+      <li><span>Tortillas a mano</span></li>
+      <li><span>Café de olla</span></li>
+    </ul>
+    <div class="modes"><span>Para comer aquí</span><span>Para llevar</span><span>A domicilio</span></div>
+  </div>
+</section>
+
+<div class="photos" aria-hidden="true">
+  <div style="background-image:url('https://images.unsplash.com/photo-1596797038530-2c107229654b?w=900&q=80&auto=format&fit=crop')"></div>
+  <div style="background-image:url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=900&q=80&auto=format&fit=crop')"></div>
+  <div class="p3" style="background-image:url('https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=900&q=80&auto=format&fit=crop')"></div>
+</div>
+
+<section class="places" id="donde">
+  <div class="wrap">
+    <h2>Pásele a comer</h2>
+    <p class="hours">Abrimos a las <i>8:00 a.m.</i></p>
+    <p class="hours-note">Desayuno y comida. Para confirmar el horario de cierre del día, mándanos un WhatsApp. Entre $100 y $200 por persona.</p>
+    <div class="sites">
+      <div class="site">
+        <p class="tag">Centro Histórico</p>
+        <h3>Av 5 Pte 322</h3>
+        <p>Centro histórico de Puebla, 72000 Puebla, Pue. · 222 232 0806</p>
+        <div class="actions">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Fonda%20Margarita%20El%20reino%20del%20sabor%2C%20Av%205%20Pte%20322%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-alt" href="tel:+522222320806">Llamar</a>
+        </div>
+      </div>
+      <div class="site">
+        <p class="tag">También en</p>
+        <h3>Av 2 Pte 506</h3>
+        <p>Centro histórico de Puebla · 222 296 9653</p>
+        <div class="actions">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Fonda%20Margarita%2C%20Av%202%20Pte%20506%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-alt" href="tel:+522222969653">Llamar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="awning green" aria-hidden="true"></div>
+<footer>
+  <div class="wrap" style="padding-top:20px">
+    <p class="fname">Fonda Margarita</p>
+    <p>El reino del sabor · Av 5 Pte 322, Centro histórico de Puebla · 222 232 0806</p>
+    <p style="font-size:12px;color:#8f8676">Fotos ilustrativas: Unsplash.</p>
+  </div>
+</footer>
+
+<div class="dock"><a class="btn btn-main" href="https://wa.me/522222320806?text=Hola%2C%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a></div>
+</body>
+</html>

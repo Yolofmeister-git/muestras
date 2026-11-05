@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Saulo &amp; Amor Salón · Corte, rizos y uñas en Puebla</title>
+<meta name="description" content="Saulo &amp; Amor Salón en 5 Sur y 33 Poniente, Puebla: corte de cabello, corte para cabello rizado y diseño de uñas. 4.9 en Google. Agenda por WhatsApp.">
+<meta property="og:title" content="Saulo &amp; Amor Salón · Puebla">
+<meta property="og:description" content="Corte de cabello, corte para cabello rizado y diseño de uñas. Agenda por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200&q=80&auto=format&fit=crop">
+<meta name="theme-color" content="#121010">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#121010; --paper:#f3ede6; --blush:#dcbab2; --red:#d8432a; --muted:#5f5450; --strip:38px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{font-family:Manrope,system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:17px;line-height:1.55;padding-top:var(--strip)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .strip{position:fixed;inset:0 0 auto 0;height:var(--strip);z-index:50;background:var(--ink);color:#e8ddd6;font-size:12px;line-height:1.25;
+    display:flex;align-items:center;justify-content:center;padding:0 14px;text-align:center}
+  .wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 20px}
+  .anton{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em}
+  .label{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+
+  /* cover */
+  .cover{background:var(--blush);position:relative;overflow:hidden}
+  .issue{display:flex;justify-content:space-between;padding-top:16px;padding-bottom:6px;border-bottom:1.5px solid var(--ink)}
+  .mast{font-size:clamp(78px,25vw,330px);line-height:.86;color:var(--ink);padding-top:10px}
+  .mast span{display:block;font-size:.26em;letter-spacing:.42em;line-height:1;margin-top:.3em;padding-left:.08em}
+  .cover-grid{display:flex;flex-direction:column}
+  .cover-photo{position:relative;margin-top:18px;order:-1}
+  .cover-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+  
+  .lines{color:var(--ink);padding:28px 0 40px}
+  .lines ul{list-style:none;display:grid;gap:14px;margin-bottom:22px}
+  .lines li{border-left:4px solid var(--red);padding-left:12px}
+  .lines li b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:30px;line-height:1}
+  .lines li span{font-size:16px;color:var(--muted)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;font-weight:800;font-size:16px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;transition:transform .15s,background .15s}
+  .btn:active{transform:scale(.98)}
+  .btn svg{width:22px;height:22px;flex:none}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:#c13720}
+  .btn-ghost{color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+  .btn-ink{background:var(--ink);color:var(--paper)}
+  .ctas{display:flex;flex-wrap:wrap;gap:10px}
+  .ctas .btn{flex:1 1 200px}
+
+  /* contents */
+  .toc{padding:72px 0 64px}
+  .toc h2{font-size:clamp(64px,19vw,180px);line-height:.85}
+  .toc .sub{font-size:19px;max-width:30ch;margin:14px 0 34px;color:var(--muted)}
+  .toc ol{list-style:none}
+  .toc li{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:baseline;padding:20px 0;border-top:1.5px solid var(--ink)}
+  .toc li:last-child{border-bottom:1.5px solid var(--ink)}
+  .toc .p{font-family:Anton,Impact,sans-serif;font-size:22px;color:var(--red)}
+  .toc .t{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(32px,9vw,64px);line-height:.95}
+  .toc .d{grid-column:2;color:var(--muted);font-size:16px}
+
+  /* spreads */
+  .spread{display:grid}
+  .spread img{width:100%;aspect-ratio:4/5;object-fit:cover}
+  .spread .txt{padding:40px 20px 64px}
+  .spread .big{font-size:clamp(96px,30vw,260px);line-height:.82}
+  .spread p{font-size:20px;line-height:1.4;max-width:28ch;margin-top:18px}
+  .dark{background:var(--ink);color:var(--paper)}
+  .dark p{color:#d8cdc6}
+
+  /* rating */
+  .rate{padding:76px 0;border-bottom:1.5px solid var(--ink)}
+  .rate .n{font-size:clamp(150px,46vw,360px);line-height:.8;color:var(--ink)}
+  .rate .n small{font-size:.22em;color:var(--red);margin-left:.1em}
+  .rate p{font-size:21px;max-width:26ch;margin-top:16px}
+  .rate .label{color:var(--muted);display:block;margin-bottom:16px}
+
+  /* where */
+  .where{padding:76px 0 84px}
+  .where .label{color:var(--muted)}
+  .corner{font-size:clamp(54px,16vw,150px);line-height:.88;margin:14px 0 6px}
+  .corner-sub{font-size:21px;font-weight:700}
+  .facts{display:grid;gap:28px;margin-top:40px}
+  .facts .label{display:block;margin-bottom:8px}
+  .facts p{font-size:19px}
+  .facts .k{font-family:Anton,Impact,sans-serif;font-size:40px;line-height:1;display:block}
+  .arrow{display:inline-block;margin-top:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;text-decoration:none;border-bottom:3px solid var(--red);padding:8px 0}
+  .note{color:var(--muted);font-size:15px;margin-top:4px}
+
+  /* final */
+  .final{background:var(--red);color:#fff;padding:84px 0 120px}
+  .final h2{font-size:clamp(64px,19vw,200px);line-height:.85}
+  .final p{font-size:20px;margin:18px 0 28px;max-width:28ch}
+  .final .btn-ink{background:var(--ink);color:#fff}
+  .final .btn-ghost{color:#fff;box-shadow:inset 0 0 0 2px #fff}
+  footer{background:var(--ink);color:#b3a7a1;font-size:14px;padding:28px 0 110px}
+  footer .wrap{display:flex;flex-direction:column;gap:6px}
+
+  .sticky{transform:translateY(140%);opacity:0;pointer-events:none;transition:transform .3s ease,opacity .3s ease}
+  .sticky.on{transform:none;opacity:1;pointer-events:auto}
+  .sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:flex;gap:8px}
+  .sticky a{min-height:56px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(18,16,16,.3)}
+  .sticky .s-wa{flex:1.7;background:#1f9d57;color:#fff}
+  .sticky .s-call{flex:1;background:var(--paper);color:var(--ink)}
+  .sticky svg{width:20px;height:20px}
+
+  @media (min-width:900px){
+    :root{--strip:32px}
+    .wrap{padding:0 56px}
+    body{font-size:18px}
+    .mast{font-size:clamp(150px,14.2vw,230px);padding-top:16px;white-space:nowrap}
+    .mast span{font-size:.2em;margin-top:.45em}
+    .cover-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:end;margin-top:28px}
+    .cover-photo{margin-top:0;order:2}
+    .cover-photo::after{display:none}
+    .cover-photo img{aspect-ratio:4/3;object-position:50% 30%}
+    .lines{position:static;color:var(--ink);padding:0 48px 56px 0}
+    .lines li span{font-size:17px}
+    .lines li b{font-size:40px}
+    .ctas .btn{flex:0 0 auto}
+    .toc{padding:120px 0 110px}
+    .toc .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+    .spread{grid-template-columns:1fr 1fr;align-items:stretch}
+    .spread img{aspect-ratio:auto;height:100%;min-height:640px}
+    .spread .txt{padding:80px 72px;display:flex;flex-direction:column;justify-content:center}
+    .spread.flip img{order:2}
+    .rate{padding:110px 0}
+    .rate .wrap{display:flex;align-items:center;gap:80px}
+    .where{padding:110px 0}
+    .facts{grid-template-columns:repeat(3,1fr);gap:48px}
+    .sticky{display:none}
+    footer{padding-bottom:28px}
+    .final{padding:130px 0}
+  }
+</style>
+</head>
+<body>
+<div class="strip">Propuesta de página para Saulo &amp; Amor Salón · aún no es su sitio oficial</div>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="issue label"><span>Salón · Puebla</span><a href="tel:+522225054935" style="text-decoration:none">222 505 4935</a></div>
+    <h1 class="mast anton">Saulo &amp; Amor<span>Salón</span></h1>
+  </div>
+  <div class="wrap cover-grid">
+    <div class="lines wrap-inner">
+      <ul>
+        <li><b>Rizos</b><span>Corte para cabello rizado</span></li>
+        <li><b>Corte</b><span>Corte de cabello a tu medida</span></li>
+        <li><b>Uñas</b><span>Diseño de uñas</span></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-red" href="https://wa.me/522225054935?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Agenda por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="tel:+522225054935">Llamar</a>
+      </div>
+    </div>
+    <figure class="cover-photo">
+      <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1600&q=80&auto=format&fit=crop" alt="Mujer con cabello rizado" fetchpriority="high">
+    </figure>
+  </div>
+</header>
+
+<main>
+<section class="toc">
+  <div class="wrap">
+    <div>
+      <p class="label" style="color:var(--red)">En este salón</p>
+      <h2 class="anton">Contenido</h2>
+      <p class="sub">Cabello y uñas, con atención personal y a tiempo.</p>
+    </div>
+    <ol>
+      <li><span class="p">01</span><span class="t">Corte de cabello</span><span class="d">Cuéntanos qué buscas y salimos con el corte que va contigo.</span></li>
+      <li><span class="p">02</span><span class="t">Corte para cabello rizado</span><span class="d">Tus rizos, cortados para que se vean y se sientan como deben.</span></li>
+      <li><span class="p">03</span><span class="t">Uñas y diseño de uñas</span><span class="d">Diseños para tus manos, del más sencillo al más atrevido.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="spread dark">
+  <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1400&q=80&auto=format&fit=crop" alt="Manos con uñas en negro y carey" loading="lazy">
+  <div class="txt">
+    <p class="label" style="color:var(--red)">Uñas</p>
+    <h2 class="big anton">Diseño</h2>
+    <p>Elige el diseño que quieras. Mándanos tu idea por WhatsApp y te decimos cuándo hay lugar.</p>
+  </div>
+</section>
+
+<section class="spread flip">
+  <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1400&q=80&auto=format&fit=crop" alt="Estilista secando el cabello de una clienta" loading="lazy">
+  <div class="txt">
+    <p class="label" style="color:var(--red)">Cabello</p>
+    <h2 class="big anton">Corte</h2>
+    <p>Corte de cabello y corte especial para rizos. Agenda tu hora y llega a tu cita.</p>
+  </div>
+</section>
+
+<section class="rate">
+  <div class="wrap">
+    <div class="n anton">4.9<small>/5</small></div>
+    <div>
+      <span class="label">En Google</span>
+      <p>79 reseñas de clientas y clientes en Google Maps.</p>
+    </div>
+  </div>
+</section>
+
+<section class="where" id="ubicacion">
+  <div class="wrap">
+    <p class="label">Dónde estamos</p>
+    <h2 class="corner anton">5 Sur y 33 Poniente</h2>
+    <p class="corner-sub">Junto al Oxxo.</p>
+    <div class="facts">
+      <div>
+        <span class="label">Dirección</span>
+        <p>Av. 33 Poniente 316<br>5 Sur y 33 Poniente, junto al Oxxo<br>72420 Puebla, Pue.</p>
+        <a class="arrow" href="https://www.google.com/maps/search/?api=1&query=Saulo%20%26%20Amor%20Sal%C3%B3n%2C%20junto%20al%20Oxxo%2C%205%20Sur%20y%2033%20Poniente%20316%2C%20Av.%2033%20Pte.%2C%2072420%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar &rarr;</a>
+      </div>
+      <div>
+        <span class="label">Horario</span>
+        <p><span class="k">12:00 a 20:00</span></p>
+        <p class="note">Confirma tu día y hora por WhatsApp.</p>
+      </div>
+      <div>
+        <span class="label">Teléfono</span>
+        <p><a href="tel:+522225054935" style="text-decoration:none"><span class="k">222 505 4935</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="anton">Tu cita, por WhatsApp.</h2>
+    <p>Escríbenos qué te quieres hacer y te damos lugar.</p>
+    <div class="ctas">
+      <a class="btn btn-ink" href="https://wa.me/522225054935?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Agenda por WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+522225054935">Llamar al 222 505 4935</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Saulo &amp; Amor Salón · Puebla</span>
+    <span>Fotos: Unsplash (ilustrativas)</span>
+    <span>Propuesta de página, aún no es el sitio oficial del negocio.</span>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Contacto rápido">
+  <a class="s-wa" href="https://wa.me/522225054935?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Agendar</a>
+  <a class="s-call" href="tel:+522225054935">Llamar</a>
+</nav>
+<script>
+(function(){var s=document.querySelector('.sticky');if(!s||!('IntersectionObserver' in window)){if(s)s.classList.add('on');return}
+var seen=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?seen.add(e.target):seen.delete(e.target)});s.classList.toggle('on',seen.size===0)});
+document.querySelectorAll('.ctas').forEach(function(c){io.observe(c)})})();
+</script>
+</body>
+</html>

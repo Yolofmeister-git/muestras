@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>La casa de las flores · Ramos y arreglos con entrega a domicilio en Puebla</title>
+<meta name="description" content="Florería en Granjas de San Isidro, Puebla: ramos personalizados, arreglos florales, rosas y orquídeas, con entrega a domicilio. Pide tu ramo por WhatsApp.">
+<meta property="og:title" content="La casa de las flores · Florería en Puebla">
+<meta property="og:description" content="Ramos personalizados, arreglos florales, rosas y orquídeas, con entrega a domicilio.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1200&q=80&auto=format&fit=crop">
+<meta name="theme-color" content="#3d0c1f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wine:#3d0c1f; --wine-2:#5a1630; --blush:#f8e4dc; --rose:#f2b8b0; --leaf:#1f3d2a;
+    --cream:#fbf5ef; --ink:#2a0915; --muted:#6e4a54; --strip:38px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{font-family:Karla,system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.55;padding-top:var(--strip)}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .strip{position:fixed;inset:0 0 auto 0;height:var(--strip);z-index:50;background:#1d0610;color:#f3d5cc;font-size:12px;line-height:1.25;
+    display:flex;align-items:center;justify-content:center;padding:0 14px;text-align:center}
+  .wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 22px}
+  .disp{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.02em;line-height:.9}
+
+  /* hero */
+  .hero{position:relative;min-height:calc(100svh - var(--strip));display:flex;flex-direction:column;justify-content:flex-end;color:var(--blush);overflow:hidden;background:var(--wine)}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,6,16,.35) 0%,rgba(29,6,16,0) 30%,rgba(29,6,16,.55) 62%,rgba(29,6,16,.92) 100%)}
+  .hero .top{position:absolute;top:18px;left:0;right:0;z-index:2}
+  .hero .top .wrap{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+  .hero .top a{text-decoration:none;border-bottom:1.5px solid currentColor;padding:6px 0;letter-spacing:.04em}
+  .hero .body{position:relative;z-index:2;padding-bottom:36px}
+  .hero h1{font-size:clamp(68px,21vw,230px);font-variation-settings:"wdth" 82;color:var(--blush)}
+  .hero p{font-size:clamp(19px,5vw,26px);line-height:1.3;max-width:24ch;margin:20px 0 26px;color:#fbece6}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s,background .15s}
+  .btn:active{transform:scale(.98)}
+  .btn svg{width:22px;height:22px;flex:none}
+  .btn-rose{background:var(--rose);color:var(--wine)}
+  .btn-rose:hover{background:#f7cbc4}
+  .btn-line{color:var(--blush);box-shadow:inset 0 0 0 2px rgba(248,228,220,.75)}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .ctas .btn{flex:1 1 220px}
+
+  /* flower words */
+  .words{background:var(--wine);color:var(--blush);padding:64px 0 70px}
+  .words .k{font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+  .words ul{list-style:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-variation-settings:"wdth" 85;font-size:clamp(44px,13vw,128px);line-height:.98;letter-spacing:-.015em}
+  .words li{border-bottom:1px solid rgba(248,228,220,.22);padding:8px 0 12px}
+  .words li:last-child{border-bottom:0}
+
+  /* editorial rows */
+  .ed{padding:80px 0 24px}
+  .row{display:grid;gap:22px;margin-bottom:72px}
+  .row img{width:100%;aspect-ratio:4/5;object-fit:cover}
+  .row .tag{font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .row h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-variation-settings:"wdth" 85;font-size:clamp(40px,11vw,84px);line-height:.94;letter-spacing:-.015em;color:var(--wine);margin:8px 0 14px}
+  .row p{font-size:19px;color:var(--ink);max-width:34ch}
+
+  /* steps */
+  .steps{background:var(--blush);padding:76px 0}
+  .steps h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-variation-settings:"wdth" 85;font-size:clamp(40px,11vw,84px);line-height:.94;letter-spacing:-.015em;color:var(--wine);max-width:12ch;margin-bottom:36px}
+  .steps ol{list-style:none;counter-reset:s}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:4px 14px;padding:22px 0;border-top:2px solid var(--wine)}
+  .steps li::before{content:counter(s,decimal-leading-zero);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:34px;line-height:1;color:var(--wine);grid-row:span 2}
+  .steps b{font-size:21px;color:var(--wine)}
+  .steps span{color:var(--muted)}
+
+  /* rating */
+  .rate{background:var(--leaf);color:#eef3e9;padding:70px 0}
+  .rate .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(120px,36vw,240px);line-height:.8;letter-spacing:-.05em;color:#f8e4dc}
+  .rate p{font-size:20px;max-width:28ch;margin-top:16px}
+  .rate small{display:block;margin-top:8px;color:#b9c9b8;font-size:15px}
+
+  /* visit */
+  .visit{padding:80px 0}
+  .visit h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-variation-settings:"wdth" 85;font-size:clamp(40px,11vw,84px);line-height:.94;letter-spacing:-.015em;color:var(--wine);margin-bottom:34px}
+  .facts{display:grid;gap:30px}
+  .facts h3{font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .facts p{font-size:20px;line-height:1.4}
+  .facts .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:34px;line-height:1.05;color:var(--wine);display:block}
+  .arrow{display:inline-block;margin-top:12px;font-weight:700;color:var(--wine);text-decoration:none;border-bottom:2px solid var(--rose);padding:6px 0}
+  .note{color:var(--muted);font-size:16px;margin-top:6px}
+
+  /* final */
+  .final{position:relative;color:var(--blush);padding:100px 0 130px;overflow:hidden;background:var(--wine)}
+  .final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.26}
+  .final .wrap{position:relative}
+  .final h2{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-variation-settings:"wdth" 82;font-size:clamp(48px,14vw,150px);line-height:.9;letter-spacing:-.02em;max-width:10ch}
+  .final p{font-size:20px;margin:18px 0 28px;max-width:30ch}
+  footer{background:#1d0610;color:#c9a9ae;font-size:14px;padding:28px 0 110px}
+  footer .wrap{display:flex;flex-direction:column;gap:6px}
+
+  .sticky{transform:translateY(140%);opacity:0;pointer-events:none;transition:transform .3s ease,opacity .3s ease}
+  .sticky.on{transform:none;opacity:1;pointer-events:auto}
+  .sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:flex;gap:10px}
+  .sticky a{min-height:56px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 10px 30px rgba(29,6,16,.35)}
+  .sticky .s-wa{flex:1.7;background:#1f9d57;color:#fff}
+  .sticky .s-call{flex:1;background:var(--cream);color:var(--wine)}
+  .sticky svg{width:20px;height:20px}
+
+  @media (min-width:900px){
+    :root{--strip:32px}
+    .wrap{padding:0 56px}
+    body{font-size:18px}
+    .hero .body{padding-bottom:64px}
+    .hero .body .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:end}
+    .hero p{margin-top:0}
+    .ctas .btn{flex:0 0 auto}
+    .words{padding:96px 0}
+    .words ul{display:flex;flex-wrap:wrap;gap:0 .4em}
+    .words li{border:0;padding:0}
+    .words li:not(:last-child)::after{content:"·";margin-left:.4em;color:var(--rose)}
+    .ed{padding:120px 0 40px}
+    .row{grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-bottom:110px}
+    .row.flip img{order:2}
+    .row img{aspect-ratio:5/6}
+    .steps{padding:110px 0}
+    .steps .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+    .rate .wrap{display:flex;align-items:center;gap:72px}
+    .visit .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+    .facts{grid-template-columns:1fr 1fr;gap:40px 56px}
+    .sticky{display:none}
+    footer{padding-bottom:28px}
+    .final{padding:150px 0}
+  }
+</style>
+</head>
+<body>
+<div class="strip">Propuesta de página para La casa de las flores · aún no es su sitio oficial</div>
+
+<header class="hero">
+  <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=1800&q=80&auto=format&fit=crop" alt="Ramo de flores frescas" fetchpriority="high">
+  <div class="top"><div class="wrap"><span>Florería · Puebla</span><a href="tel:+522226776020">222 677 6020</a></div></div>
+  <div class="body">
+    <div class="wrap">
+      <h1 class="disp">La casa de las flores</h1>
+      <div>
+        <p>Ramos personalizados y arreglos florales, con entrega a domicilio.</p>
+        <div class="ctas">
+          <a class="btn btn-rose" href="https://wa.me/522226776020?text=Hola%2C%20quiero%20pedir%20un%20ramo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            Pide tu ramo por WhatsApp
+          </a>
+          <a class="btn btn-line" href="tel:+522226776020">Llamar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="words" aria-label="Lo que encuentras">
+  <div class="wrap">
+    <p class="k">En la florería</p>
+    <ul>
+      <li>Rosas</li>
+      <li>Orquídeas</li>
+      <li>Ramos a tu gusto</li>
+      <li>Arreglos florales</li>
+      <li>A domicilio</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ed">
+  <div class="wrap">
+    <article class="row">
+      <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=1200&q=80&auto=format&fit=crop" alt="Rosas rojas" loading="lazy">
+      <div>
+        <span class="tag">Ramos personalizados</span>
+        <h2>De las rosas clásicas a las orquídeas.</h2>
+        <p>Cuéntanos para quién es y qué quieres decir. Armamos el ramo contigo, flor por flor.</p>
+      </div>
+    </article>
+    <article class="row flip">
+      <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=1200&q=80&auto=format&fit=crop" alt="Arreglo de flores en tonos rosa" loading="lazy">
+      <div>
+        <span class="tag">Arreglos florales</span>
+        <h2>Para la mesa, la fiesta o el detalle.</h2>
+        <p>Arreglos hechos a la medida de la ocasión, en los colores que tú elijas.</p>
+      </div>
+    </article>
+    <article class="row">
+      <img src="https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?w=1200&q=80&auto=format&fit=crop" alt="Ramo envuelto en papel kraft" loading="lazy">
+      <div>
+        <span class="tag">Entrega a domicilio</span>
+        <h2>Llega a su puerta.</h2>
+        <p>Te lo llevamos a domicilio para que la sorpresa llegue completa.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <h2>Pedir un ramo es así de fácil.</h2>
+    <ol>
+      <li><b>Escríbenos por WhatsApp</b><span>Dinos la ocasión y para cuándo lo necesitas.</span></li>
+      <li><b>Elige flores y colores</b><span>Rosas, orquídeas o una mezcla: te ayudamos a decidir.</span></li>
+      <li><b>Recíbelo o pasa por él</b><span>A domicilio, o en la florería de la 14 Sur.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="rate">
+  <div class="wrap">
+    <div class="n">4.7</div>
+    <div>
+      <p>de 5 estrellas en Google, con 90 reseñas de clientes.</p>
+      <small>Calificación pública en Google Maps.</small>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visitanos">
+  <div class="wrap">
+    <h2>Visítanos en Granjas de San Isidro.</h2>
+    <div class="facts">
+      <div>
+        <h3>Dirección</h3>
+        <p>Prol. de la 14 Sur 9104, Local 2<br>Granjas de San Isidro, 72587<br>Puebla, Pue.</p>
+        <a class="arrow" href="https://www.google.com/maps/search/?api=1&query=La%20casa%20de%20las%20flores%2C%20Prol.%20de%20la%2014%20Sur%209104-Loc%202%2C%20Granjas%20de%20San%20Isidro%2C%2072587%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar &rarr;</a>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <p><span class="big">9:00 a 20:00</span></p>
+        <p class="note">Confirma el horario del día por WhatsApp.</p>
+      </div>
+      <div>
+        <h3>Teléfono</h3>
+        <p><a href="tel:+522226776020" style="text-decoration:none"><span class="big">222 677 6020</span></a></p>
+      </div>
+      <div>
+        <h3>También en</h3>
+        <p>Nuestra sucursal de la 24 Sur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=1800&q=80&auto=format&fit=crop" alt="" loading="lazy">
+  <div class="wrap">
+    <h2>¿Para quién es el ramo?</h2>
+    <p>Escríbenos y lo armamos juntos.</p>
+    <div class="ctas">
+      <a class="btn btn-rose" href="https://wa.me/522226776020?text=Hola%2C%20quiero%20pedir%20un%20ramo" target="_blank" rel="noopener">Pide tu ramo por WhatsApp</a>
+      <a class="btn btn-line" href="tel:+522226776020">Llamar al 222 677 6020</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>La casa de las flores · Florería en Puebla</span>
+    <span>Fotos: Unsplash (ilustrativas)</span>
+    <span>Propuesta de página, aún no es el sitio oficial del negocio.</span>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Contacto rápido">
+  <a class="s-wa" href="https://wa.me/522226776020?text=Hola%2C%20quiero%20pedir%20un%20ramo" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Pide tu ramo</a>
+  <a class="s-call" href="tel:+522226776020">Llamar</a>
+</nav>
+<script>
+(function(){var s=document.querySelector('.sticky');if(!s||!('IntersectionObserver' in window)){if(s)s.classList.add('on');return}
+var seen=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?seen.add(e.target):seen.delete(e.target)});s.classList.toggle('on',seen.size===0)});
+document.querySelectorAll('.ctas').forEach(function(c){io.observe(c)})})();
+</script>
+</body>
+
+</html>

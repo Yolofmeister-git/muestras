@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>La Consentida · Antojitos poblanos en Chulavista, Puebla</title>
+<meta name="description" content="Gorditas infladas, chalupas, memelas, quesadillas, mole de panza y pozole. Desayunos y comidas en Calle 3 Sur 3504, Chulavista, Puebla. Pide por WhatsApp.">
+<meta property="og:title" content="La Consentida · Antojitos poblanos">
+<meta property="og:description" content="Desayunos y comidas poblanas en Chulavista. Para comer aquí, para llevar o a domicilio.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1613514785940-daed07799d9b?w=1200&q=80&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,800;1,9..144,900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cobalt:#1b3584;
+  --cobalt-deep:#10224f;
+  --cream:#f7f0e3;
+  --paper:#fffaf1;
+  --chile:#b8321f;
+  --yolk:#f0b43a;
+  --ink:#1a1712;
+  --muted:#5c5446;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Work Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;padding-top:42px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.strip{position:fixed;top:0;left:0;right:0;z-index:50;height:42px;display:flex;align-items:center;justify-content:center;padding:0 18px;background:var(--ink);color:#e9e1d1;font-size:12px;line-height:1.3;letter-spacing:.02em;text-align:center}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 22px}
+
+/* talavera tile, drawn in CSS */
+.tile{
+  background:
+    radial-gradient(circle at 50% 50%, var(--yolk) 0 7%, transparent 7.5%),
+    radial-gradient(circle at 50% 50%, transparent 0 17%, var(--cobalt) 17.5% 23%, transparent 23.5%),
+    radial-gradient(circle at 0 0, var(--cobalt) 0 29%, transparent 29.5%),
+    radial-gradient(circle at 100% 0, var(--cobalt) 0 29%, transparent 29.5%),
+    radial-gradient(circle at 0 100%, var(--cobalt) 0 29%, transparent 29.5%),
+    radial-gradient(circle at 100% 100%, var(--cobalt) 0 29%, transparent 29.5%),
+    radial-gradient(circle at 50% 0, var(--chile) 0 6%, transparent 6.5%),
+    radial-gradient(circle at 0 50%, var(--chile) 0 6%, transparent 6.5%),
+    var(--paper);
+  background-size:60px 60px;
+}
+.band{height:30px}
+
+/* hero */
+.hero{background:var(--paper);position:relative}
+.hero-grid{display:grid;gap:0}
+.hero-text{padding:40px 22px 36px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--chile)}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:clamp(58px,17vw,128px);line-height:.88;letter-spacing:-.035em;color:var(--cobalt);margin:14px 0 20px}
+h1 em{font-style:italic;font-weight:900;display:block;color:var(--cobalt)}
+.lede{font-size:19px;max-width:30ch;color:var(--ink)}
+@media (min-width:1024px){.lede{font-size:22px}h1{font-size:min(128px,7.8vw)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, background .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-main{background:var(--cobalt);color:#fff;flex:1 1 100%}
+.btn-main:hover{background:var(--cobalt-deep)}
+.btn-line{border:2px solid var(--cobalt);color:var(--cobalt);flex:1 1 100%}
+.btn-line:hover{background:var(--cobalt);color:#fff}
+.btn svg{width:22px;height:22px;flex:none}
+.rating{display:flex;align-items:baseline;gap:10px;margin-top:26px;font-size:15px;color:var(--muted)}
+.rating b{font-family:"Fraunces",Georgia,serif;font-size:34px;font-weight:900;color:var(--ink);line-height:1}
+.hero-photo{position:relative;min-height:340px;background:#c9b89c url("https://images.unsplash.com/photo-1613514785940-daed07799d9b?w=1600&q=80&auto=format&fit=crop") center/cover no-repeat}
+
+/* menu */
+.menu{padding:72px 0 64px;background:var(--cream)}
+.sec-title{font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:clamp(40px,10vw,84px);line-height:.95;letter-spacing:-.03em;color:var(--ink)}
+.sec-title i{color:var(--chile)}
+.sec-note{margin-top:14px;color:var(--muted);font-size:17px;max-width:44ch}
+.groups{margin-top:44px;display:grid;gap:44px}
+.group h3{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cobalt);padding-bottom:12px;border-bottom:3px solid var(--cobalt)}
+.group ul{list-style:none}
+.group li{font-family:"Fraunces",Georgia,serif;font-weight:700;letter-spacing:-.01em;font-size:clamp(26px,7vw,38px);line-height:1.1;padding:14px 0;border-bottom:1px solid rgba(26,23,18,.16);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.group li small{font-family:"Work Sans",sans-serif;font-style:normal;font-weight:500;font-size:14px;color:var(--muted);text-align:right}
+.modes{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px 28px;font-weight:600;font-size:16px}
+.modes span{display:flex;align-items:center;gap:10px}
+.modes span::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--chile)}
+
+/* photo pair */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--paper)}
+.pair div{aspect-ratio:4/5;background:#d8c7aa center/cover no-repeat}
+.pair .third{display:none}
+
+/* visit */
+.visit{background:var(--cobalt);color:#fff;padding:72px 0}
+.visit .sec-title{color:#fff}
+.visit .sec-title i{color:var(--yolk)}
+.visit-grid{display:grid;gap:48px;margin-top:40px}
+.label{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--yolk);margin-bottom:12px}
+.big{font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:clamp(34px,9vw,56px);line-height:1;letter-spacing:-.02em}
+.visit p:not(.big):not(.addr):not(.label){font-size:17px;color:#dfe4f4;margin-top:14px;max-width:38ch}
+.addr{font-size:22px;line-height:1.35;font-weight:600;color:#fff;max-width:24ch}
+.visit .btn-line{border-color:#fff;color:#fff}
+.visit .btn-line:hover{background:#fff;color:var(--cobalt)}
+.visit .btn-main{background:var(--yolk);color:var(--ink)}
+.visit .btn-main:hover{background:#ffc95c}
+.visit .actions{margin-top:22px}
+
+footer{background:var(--ink);color:#bdb4a3;padding:40px 0 110px;font-size:14px}
+footer .wrap{display:grid;gap:18px}
+.social{display:flex;gap:20px;flex-wrap:wrap}
+.social a{color:#fff;font-weight:600;text-decoration:none;border-bottom:2px solid var(--yolk);padding:6px 0}
+.fname{font-family:"Fraunces",Georgia,serif;font-weight:900;font-size:28px;color:#fff}
+
+/* mobile order bar */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+.dock .btn{width:100%;box-shadow:0 10px 30px rgba(16,34,79,.35)}
+
+@media (min-width:760px){
+  body{padding-top:34px}.strip{height:34px}
+  .btn-main,.btn-line{flex:0 0 auto}
+  .groups{grid-template-columns:1.4fr 1fr;column-gap:64px}
+  .groups .group:first-child{grid-row:span 2}
+  .pair{grid-template-columns:1fr 1fr 1fr}
+  .pair div{aspect-ratio:1/1}
+  .pair .third{display:block}
+  .visit-grid{grid-template-columns:1fr 1fr}
+  .dock{display:none}
+  footer{padding-bottom:40px}
+  footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+@media (min-width:1024px){
+  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);min-height:calc(100vh - 34px - 60px)}
+  .hero-text{padding:72px 56px 64px max(22px,calc((100vw - 1200px)/2 + 22px));display:flex;flex-direction:column;justify-content:center}
+  .hero-photo{min-height:100%}
+  .band{height:30px}
+  .menu{padding:110px 0 96px}
+  .visit{padding:110px 0}
+}
+</style>
+</head>
+<body>
+<div class="strip">Propuesta de página para La Consentida · aún no es su sitio oficial</div>
+
+<header class="hero">
+  <div class="tile band" aria-hidden="true"></div>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="kicker">Antojitos poblanos · Chulavista</p>
+      <h1>La <em>Consentida</em></h1>
+      <p class="lede">Gorditas infladas, chalupas y mole de panza para el desayuno y la comida, como se hacen en Puebla.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="https://wa.me/522221795620?text=Hola%2C%20quiero%20hacer%20un%20pedido">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.1z"/></svg>
+          Pedir por WhatsApp</a>
+        <a class="btn btn-line" href="tel:+522221795620">Llamar · 222 179 5620</a>
+      </div>
+      <div class="rating"><b>4.2</b><span>en Google, con más de 1,200 reseñas</span></div>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Mesa con tacos y salsas sobre azulejo de talavera"></div>
+  </div>
+</header>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <h2 class="sec-title">Lo que se <i>antoja</i></h2>
+    <p class="sec-note">Para el desayuno y la comida. Pregunta por WhatsApp qué hay hoy.</p>
+    <div class="groups">
+      <div class="group">
+        <h3>Antojitos</h3>
+        <ul>
+          <li>Gorditas infladas</li>
+          <li>Chalupas</li>
+          <li>Memelas</li>
+          <li>Quesadillas <small>de chicharrón o de flor</small></li>
+          <li>Picaditas</li>
+          <li>Pelonas</li>
+          <li>Chanclas</li>
+          <li>Tacos dorados <small>de barbacoa</small></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Platos calientes</h3>
+        <ul>
+          <li>Mole de panza</li>
+          <li>Pozole</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Para acompañar</h3>
+        <ul>
+          <li>Café de olla</li>
+          <li>Jugos naturales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modes"><span>Para comer aquí</span><span>Para llevar</span><span>A domicilio</span></div>
+  </div>
+</section>
+
+<div class="pair" aria-hidden="true">
+  <div style="background-image:url('https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=900&q=80&auto=format&fit=crop')"></div>
+  <div style="background-image:url('https://images.unsplash.com/photo-1582234372722-50d7ccc30ebd?w=900&q=80&auto=format&fit=crop')"></div>
+  <div class="third" style="background-image:url('https://images.unsplash.com/photo-1564767655658-4e6b365884ff?w=900&q=80&auto=format&fit=crop')"></div>
+</div>
+
+<section class="visit" id="visita">
+  <div class="wrap">
+    <h2 class="sec-title">Ven a <i>desayunar</i></h2>
+    <div class="visit-grid">
+      <div>
+        <p class="label">Horario</p>
+        <p class="big">Desde las 8:30 a.m.</p>
+        <p>Desayunos y comidas. El horario cambia según el día, así que mándanos un WhatsApp antes de venir. Entre $100 y $200 por persona.</p>
+      </div>
+      <div>
+        <p class="label">Dónde estamos</p>
+        <p class="addr">Calle 3 Sur 3504, Chulavista, 72420 Puebla, Pue.</p>
+        <div class="actions">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=La%20Consentida%2C%20Calle%203%20Sur%203504%2C%20Chulavista%2C%2072420%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue." target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-line" href="https://wa.me/522221795620">Escríbenos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="tile band" aria-hidden="true"></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="fname">La Consentida</p>
+      <p>Antojitos poblanos · Calle 3 Sur 3504, Chulavista, Puebla · 222 179 5620</p>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/antojitosmex.laconsentida" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/LaConsentidaAntojitosMexicanos" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p style="font-size:12px;color:#8d8576">Fotos ilustrativas: Unsplash.</p>
+  </div>
+</footer>
+
+<div class="dock"><a class="btn btn-main" href="https://wa.me/522221795620?text=Hola%2C%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a></div>
+</body>
+</html>
